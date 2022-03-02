@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+// Import React
+import React, { Component } from "react";
+  
+// Import Bootstrap
+  
+// Import Custom CSS
+import "./App.css";
+  
+// Import from react-router-dom
+import { BrowserRouter as Router, Routes,
+    Route, Link } from "react-router-dom";
+  
+// Import other React Component
 
-function App() {
+import TarjetasComponent from
+    "./Components/cardstest"
+import NavBar from
+  "./Components/navbar"
+import FooterPage from "./Components/footerbar";
+import MyComponent from "./Components/test";
+
+import List from "./Components/efecto"
+//import axios from "axios";
+
+// App Component
+class App extends Component {
+  state = {
+    visible: true
+  };
+  render() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Router>
+    <NavBar>
+      </NavBar> 
+           
+      <List/>
+        <TarjetasComponent>
+            
+            </TarjetasComponent>  
 
+            <MyComponent>
+          
+          </MyComponent>
+      
+            <FooterPage>
+        
+        </FooterPage>
+
+    </Router>
+    </div>
+    
+  );
+  }
+}
+  
 export default App;
