@@ -2,7 +2,8 @@ import {useEffect, useState, useRef} from 'react';
 function List(){
  const [list, setList] = useState([]);
  useEffect(()=>{
-  fetch('https://amazfunels.herokuapp.com/api/')
+    fetch('http://localhost:8000/api/')
+  //fetch('https://amazfunels.herokuapp.com/api/')
     .then(response => response.json())
     .then(setList);
  }, []);

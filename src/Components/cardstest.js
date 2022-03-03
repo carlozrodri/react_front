@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {  Card, CardGroup  } 
+import {  Card, CardGroup, Row  } 
         from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
   
@@ -79,6 +79,7 @@ const TarjetasComponent = () => {
     <small className="text-muted">Last updated 3 mins ago</small>
     </Card.Footer>
 </Card>
+<Row className="justify-content-center">
 <Card className="lol">
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
@@ -93,6 +94,7 @@ const TarjetasComponent = () => {
     <small className="text-muted">Last updated 3 mins ago</small>
     </Card.Footer>
 </Card>
+</Row>
 </CardGroup>
 </div>
 )

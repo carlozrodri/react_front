@@ -5,13 +5,25 @@
 body h3 {
   margin-bottom: 25px;
 }
+/* .container-board {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+}
 
+.box-board {
+  width: 25%;
+} */
 .lol {
+  /* display: flex; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  width: '30rem';
 	margin: 1.5%;	
 	background-image: linear-gradient(180deg, #eee, #fff 200px, #fff);
 }
 	  
-  
   
 .navbar-brand a {
   color: #ffffff;

@@ -12,7 +12,6 @@ function NavBar() {
         <div>
         <header className="App-header">
           <Navbar bg="dark" variant="dark">
-            <Container>
               <Navbar.Brand>
                 <Link to={"/create-student"} 
                   className="nav-link">
@@ -20,21 +19,14 @@ function NavBar() {
                 </Link>
               </Navbar.Brand>
               <Nav className="justify-content-end">
-                <Nav>
-                  <Link to={"/create-student"} 
-                    className="nav-link">
-                    Create Student
-                  </Link>
-                </Nav>
-  
+
                 <Nav>
                   <Link to={"/student-list"} 
                     className="nav-link">
-                    Student List
+                    Sign up!
                   </Link>
                 </Nav>
               </Nav>
-            </Container>
           </Navbar>
         </header>
         </div>

@@ -18,8 +18,8 @@ import NavBar from
   "./Components/navbar"
 import FooterPage from "./Components/footerbar";
 import MyComponent from "./Components/test";
-
-import List from "./Components/efecto"
+import ItemDisplay from "./Components/item_display";
+//import List from "./Components/efecto"
 //import axios from "axios";
 
 // App Component
@@ -33,19 +33,12 @@ class App extends Component {
     <Router>
     <NavBar>
       </NavBar> 
-           
-      <List/>
-        <TarjetasComponent>
-            
-            </TarjetasComponent>  
+            <ItemDisplay/>
 
-            <MyComponent>
-          
-          </MyComponent>
       
-            <FooterPage>
+            {/* <FooterPage>
         
-        </FooterPage>
+        </FooterPage> */}
 
     </Router>
     </div>
