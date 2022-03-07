@@ -13,26 +13,21 @@ function ItemDisplay(){
     .then(response => response.json())
     .then(setList);
  }, []);
- return (
-    <div className='d-flex justify-content-start'> 
-           
-    {list.map(todo => 
-     <div key={todo.id}>
-         
-<Container>
+ return (   
     
-  <Card className='lol' style={{ width: "16rem"}}>
-    <Card.Img  src={todo.item_pictures} />
-    <Card.Body>
+  <div className='contenido'>
+ {list.map(todo =>
+<div key={todo.id} className='card'>
+
+  <Card.Img src={todo.item_pictures} />
+  <Card.Body>
     <Card.Title>{todo.title} </Card.Title>
     <Card.Text> {todo.item_description}</Card.Text>
-        </Card.Body>
-        <Card.Footer>
+  </Card.Body>
+  <Card.Footer>
     <small className="text-muted">Last updated 2 mins ago</small>
-    </Card.Footer>
-  </Card>
-  
-</Container>
+  </Card.Footer>
+
 
                {/* <h2> Item :{todo.id}{todo.title}</h2>
      <h3>item_picture_link :{todo.item_pictures}</h3> */}

@@ -19,6 +19,9 @@ import NavBar from
 import FooterPage from "./Components/footerbar";
 import MyComponent from "./Components/test";
 import ItemDisplay from "./Components/item_display";
+import AsyncSearch from "./Components/asyncSearch";
+import UpdateCompo from "./Components/updatecompo"
+
 //import List from "./Components/efecto"
 //import axios from "axios";
 
@@ -33,12 +36,16 @@ class App extends Component {
     <Router>
     <NavBar>
       </NavBar> 
+      <AsyncSearch>
+
+      </AsyncSearch>
+      {/* <UpdateCompo/> */}
             <ItemDisplay/>
 
       
-            {/* <FooterPage>
+            <FooterPage>
         
-        </FooterPage> */}
+        </FooterPage>
 
     </Router>
     </div>

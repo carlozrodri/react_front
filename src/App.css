@@ -1,70 +1,63 @@
-.wrapper {
-  padding-top: 30px;
+:root{
+  --color: #1f306e !important;
 }
+/* RESET CSS */
+*{
+box-sizing:border-box;
+padding: 0;
+margin: 0;
+}
+img{
+  width: 100%;
+}
+body {
+min-height: 100vh;
+color: var(--color) !important;
+}
+a{
+  text-decoration: none;
+color: #fff !important;
+}
+/* FIN RESET CSS */
+
+
+/* navbar  */
+
+.navbar-expand{
+  justify-content: space-between !important;
+}
+.contenido{
+  padding: 20px;
+  display: grid;
+
+  background: #1F306E;
+  grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
+  grid-auto-rows: auto;
+  gap: 10px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    
   
-body h3 {
-  margin-bottom: 25px;
 }
-/* .container-board {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 180px;
+.card{
+  text-align: center;
 }
 
-.box-board {
-  width: 25%;
-} */
-.lol {
-  /* display: flex; */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-  width: '30rem';
-	margin: 1.5%;	
-	background-image: linear-gradient(180deg, #eee, #fff 200px, #fff);
+.card-img{
+  width: 130px;
+  margin: auto;
 }
-	  
-  
-.navbar-brand a {
-  color: #ffffff;
+
+.card-title{
+  text-align: center;
 }
-  
-.form-wrapper,
-.table-wrapper {
-  max-width: 500px;
-  margin: 0 auto;
-}
-  
-.table-wrapper {
-  max-width: 700px;
-}
-  
-.edit-link {
-  padding: 7px 10px;
-  font-size: 0.875rem;
-  line-height: normal;
-  border-radius: 0.2rem;
-  color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
-  margin-right: 10px;
-  position: relative;
-  top: 1px;
-}
-  
-.edit-link:hover {
-  text-decoration: none;
-  color: #ffffff;
-}
-  
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-  
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #4d7ada !important;
 }

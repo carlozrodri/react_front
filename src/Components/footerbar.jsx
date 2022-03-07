@@ -5,13 +5,13 @@ import {  Card, CardGroup, Button  }
 
   const FooterPage = () => {
   return ( 
-    <div>
+    <div className="">
     <Card>
   <Card.Header>Featured</Card.Header>
   <Card.Body>
-    <Card.Title>Special title treatment</Card.Title>
+    <Card.Title>Sign up and get exclusive special deals</Card.Title>
     <Card.Text>
-      With supporting text below as a natural lead-in to additional content.
+    <h9>*Emails submitted are subject to our Privacy Notice</h9>
     </Card.Text>
     <Button variant="primary">Go somewhere</Button>
   </Card.Body>
