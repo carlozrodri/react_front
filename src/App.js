@@ -12,18 +12,13 @@ import { BrowserRouter as Router, Routes,
   
 // Import other React Component
 
-import TarjetasComponent from
-    "./Components/cardstest"
-import NavBar from
-  "./Components/navbar"
+
+import NavBar from "./Components/navbar";
 import FooterPage from "./Components/footerbar";
-import MyComponent from "./Components/test";
 import ItemDisplay from "./Components/item_display";
 import AsyncSearch from "./Components/asyncSearch";
-import UpdateCompo from "./Components/updatecompo"
 
-//import List from "./Components/efecto"
-//import axios from "axios";
+
 
 // App Component
 class App extends Component {
@@ -32,22 +27,13 @@ class App extends Component {
   };
   render() {
   return (
-    <div className="App">
-    <Router>
-    <NavBar>
-      </NavBar> 
-      <AsyncSearch>
+    <div>
+    <NavBar/>
+    <ItemDisplay/>
+    {/* <ItemDisplay/> */}
 
-      </AsyncSearch>
-      {/* <UpdateCompo/> */}
-            <ItemDisplay/>
+    <FooterPage/>
 
-      
-            <FooterPage>
-        
-        </FooterPage>
-
-    </Router>
     </div>
     
   );

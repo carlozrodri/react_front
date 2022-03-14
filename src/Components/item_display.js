@@ -1,8 +1,8 @@
 import {useEffect, useState, useRef} from 'react';
-import {  Card, CardGroup, Container, Row, Col  } 
-        from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.css";
 
+import "bootstrap/dist/css/bootstrap.css";
+import { Nav, Navbar, Card  } 
+from "react-bootstrap";
 
 
 function ItemDisplay(){
@@ -18,19 +18,14 @@ function ItemDisplay(){
   <div className='contenido'>
  {list.map(todo =>
 <div key={todo.id} className='card'>
-
   <Card.Img src={todo.item_pictures} />
   <Card.Body>
     <Card.Title>{todo.title} </Card.Title>
     <Card.Text> {todo.item_description}</Card.Text>
   </Card.Body>
   <Card.Footer>
-    <small className="text-muted">Last updated 2 mins ago</small>
+    <small className="text-muted">Buy it NOW! on Amazon.co.uk</small>
   </Card.Footer>
-
-
-               {/* <h2> Item :{todo.id}{todo.title}</h2>
-     <h3>item_picture_link :{todo.item_pictures}</h3> */}
      </div>
      )}
   </div>

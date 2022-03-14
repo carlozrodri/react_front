@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AsyncSelect from 'react-select/async';
 
+
 function AsyncSearch() {
   const [inputValue, setValue] = useState('');
   const [selectedValue, setSelectedValue] = useState(null);
@@ -17,7 +18,8 @@ function AsyncSearch() {
 
   // load options using API call
   const loadOptions = (inputValue) => {
-    return fetch(`https://amazfunels.herokuapp.com/api/?search=${inputValue}`).then(res => res.json());
+    return fetch(`https://amazfunels.herokuapp.com/api/?search=${inputValue}`).then(res => res.json()).then
+    ();
   };
 
   return (
@@ -25,6 +27,7 @@ function AsyncSearch() {
 
       <AsyncSelect
         cacheOptions
+        autosize={true}
         defaultOptions
         value={selectedValue}
         getOptionLabel={e => e.title}
@@ -33,8 +36,12 @@ function AsyncSearch() {
         onInputChange={handleInputChange}
         onChange={handleChange}
       />
+      
+      
       <pre>Selected Value: {JSON.stringify(selectedValue || {}, null, 2)}</pre>
+
     </div>
+    
   );
 }
 

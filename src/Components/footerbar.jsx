@@ -3,22 +3,18 @@ import React from "react";
 import {  Card, CardGroup, Button  } 
         from "react-bootstrap";
 
-  const FooterPage = () => {
-  return ( 
-    <div className="">
-    <Card>
-  <Card.Header>Featured</Card.Header>
-  <Card.Body>
-    <Card.Title>Sign up and get exclusive special deals</Card.Title>
-    <Card.Text>
-    <h9>*Emails submitted are subject to our Privacy Notice</h9>
-    </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    const Footer = () => 
+
+
+  <Card.Body  className="footer">
+    <blockquote>
+      <p>
+        Amazon, Amazon Prime, the Amazon logo and Amazon Prime logo are trademarks of Amazon.com, Inc. or its affiliates.
+      </p>
+      <footer className="blockquote-footer">
+      <cite title="Source Title">Copyright © 2022 by TheTop8</cite>
+      </footer>
+    </blockquote>
   </Card.Body>
-</Card>
-</div>    
 
-  );
-}
-
-export default FooterPage;
+export default Footer;

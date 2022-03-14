@@ -1,23 +1,22 @@
-:root{
-  --color: #1f306e !important;
+:root{ 
+ --color: #1f306e !important; 
+
 }
 /* RESET CSS */
-*{
-box-sizing:border-box;
-padding: 0;
-margin: 0;
-}
+
 img{
   width: 100%;
 }
 body {
-min-height: 100vh;
-color: var(--color) !important;
+  margin: 0px;
+  font-family: Arial;
+  line-height: 20px;
+  background-color: #1f306e;
 }
-a{
+/* a{
   text-decoration: none;
-color: #fff !important;
-}
+  color: #fff !important;
+} */
 /* FIN RESET CSS */
 
 
@@ -35,10 +34,13 @@ color: #fff !important;
   grid-auto-rows: auto;
   gap: 10px;
   box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-    cursor: pointer;
-    transition: 0.4s;
-    
-  
+  cursor: pointer;
+  transition: 0.4s;
+
+}
+.navbar {
+  height: 90px;
+  background: #1F306E;
 }
 .card{
   text-align: center;
@@ -52,12 +54,11 @@ color: #fff !important;
 .card-title{
   text-align: center;
 }
-
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #4d7ada !important;
+  height: 80px;
+  border-radius: 20px;
+  background-color: #1F306E;
+  text-align: center;
+  color: white;
 }
