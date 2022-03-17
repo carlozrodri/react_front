@@ -7,8 +7,10 @@ from "react-bootstrap";
 
 function ItemDisplay(){
  const [list, setList] = useState([]);
- useEffect(()=>{
-    fetch('https://amazfunels.herokuapp.com/api/')
+console.log(list)
+
+useEffect(()=>{
+    fetch('http://localhost:8000/api/')
   //fetch('https://amazfunels.herokuapp.com/api/')
     .then(response => response.json())
     .then(setList);

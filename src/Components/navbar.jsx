@@ -12,13 +12,12 @@ function NavBar() {
     return ( 
         <div>
         <Navbar>
-    <Navbar.Brand href="localhost:3000">
+    <Navbar.Brand href="http://localhost:3000/">
       <img
         src={logo}
         height="95"
       />
     </Navbar.Brand>
-    <AsyncSearch/>
   </Navbar>
  
 

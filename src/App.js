@@ -29,7 +29,8 @@ class App extends Component {
   return (
     <div>
     <NavBar/>
-    <ItemDisplay/>
+    <AsyncSearch/>
+    {/* <ItemDisplay/> */}
     {/* <ItemDisplay/> */}
 
     <FooterPage/>
