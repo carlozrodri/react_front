@@ -17,7 +17,7 @@ import NavBar from "./Components/navbar";
 import FooterPage from "./Components/footerbar";
 import ItemDisplay from "./Components/item_display";
 import AsyncSearch from "./Components/asyncSearch";
-
+import UpdateCompo from "./Components/updatecompo"
 
 
 // App Component
@@ -29,10 +29,11 @@ class App extends Component {
   return (
     <div>
     <NavBar/>
-    <AsyncSearch/>
+    <UpdateCompo/>
+{/* 
+    <AsyncSearch/> */}
     {/* <ItemDisplay/> */}
     {/* <ItemDisplay/> */}
-
     <FooterPage/>
 
     </div>
