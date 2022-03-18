@@ -34,14 +34,17 @@ useEffect(()=>{
     setSelectedValue(value);
     setList2(value);
     
-  }
+  };
 
 const cargarOpciones = (inputValue) => {
 
-  return fetch(`https://amazfunels.herokuapp.com/api/?search=${inputValue}`).then(function(response){ return response.json(); }).then(function(data) {
+  return fetch(`https://amazfunels.herokuapp.com/api/?search=${inputValue}`).then(function(response){ return response.json(); }).then
+  (function(data) 
+    {
       const nuevalista3 = data;
       console.log(nuevalista3)
-  })
+    }
+  )
   
 }
 
