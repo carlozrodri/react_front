@@ -1,18 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import { Nav, Navbar, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import AsyncSelect from "react-select/async";
 
 function UpdateCompo() {
   // navbar
   const [inputValue, setValue] = useState("");
   const [selectedValue, setSelectedValue] = useState("");
-  const [valornue, valorNuevo] = useState("");
-  const [nuevalista, setList2] = useState("");
-  const [newList, newList2] = useState("");
-
-  // updatecompo
-
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
 
@@ -38,14 +32,12 @@ function UpdateCompo() {
   }, []);
   // handle input change event
   const handleInputChange = (value) => {
-    valorNuevo(value);
     setValue(value);
   };
 
   // handle selection
   const handleChange = (value) => {
     setSelectedValue(value);
-    setList2(value);
   };
   /// load options
   const loadOptions = (inputValue) => {
@@ -66,7 +58,7 @@ const getSearch =()=>{
         `https://amazfunels.herokuapp.com/api/?search=${selectedValue.name}`
       )
         .then((res) => res.json())
-        .then((data) => {console.log(data);setItems(data)});
+        .then((data) => setItems(data));
 }
 getSearch()
 },[selectedValue])
@@ -82,6 +74,7 @@ getSearch()
       <div>
         <AsyncSelect
           defaultOptions
+          placeholder='Search...'
           value={selectedValue}
           getOptionLabel={(e) => e.name}
           loadOptions={loadOptions}
@@ -89,9 +82,6 @@ getSearch()
           onChange={handleChange}
         />
 
-        <pre>
-          Selected Value1: {JSON.stringify(nuevalista.name || {}, null)}
-        </pre>
 
         <div className="contenido">
           {items.map((todo) => (
