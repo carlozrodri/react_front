@@ -7,16 +7,14 @@ import React, { Component } from "react";
 import "./App.css";
   
 // Import from react-router-dom
-import { BrowserRouter as Router, Routes,
-    Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Routes,
+//     Route, Link } from "react-router-dom";
   
 // Import other React Component
 
 
 import NavBar from "./Components/navbar";
 import FooterPage from "./Components/footerbar";
-import ItemDisplay from "./Components/item_display";
-import AsyncSearch from "./Components/asyncSearch";
 import UpdateCompo from "./Components/updatecompo"
 
 
@@ -30,10 +28,7 @@ class App extends Component {
     <div>
     <NavBar/>
     <UpdateCompo/>
-{/* 
-    <AsyncSearch/> */}
-    {/* <ItemDisplay/> */}
-    {/* <ItemDisplay/> */}
+
     <FooterPage/>
 
     </div>

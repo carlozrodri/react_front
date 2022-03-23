@@ -1,12 +1,9 @@
 import React from "react"
 
-import { BrowserRouter as Router, Routes,
-    Route, Link } from "react-router-dom";
-import { Nav, Navbar  } 
+import { Navbar  } 
 from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import logo from "./thetop8.png"
-import AsyncSearch from "./asyncSearch"
 
 function NavBar() {
     return ( 
@@ -16,6 +13,7 @@ function NavBar() {
       <img
         src={logo}
         height="95"
+        alt="logo"
       />
     </Navbar.Brand>
   </Navbar>
