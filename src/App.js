@@ -7,9 +7,7 @@ import React, { Component } from "react";
 import "./App.css";
   
 // Import from react-router-dom
-// import { BrowserRouter as Router, Routes,
-//     Route, Link } from "react-router-dom";
-  
+
 // Import other React Component
 
 
@@ -20,9 +18,6 @@ import UpdateCompo from "./Components/updatecompo"
 
 // App Component
 class App extends Component {
-  state = {
-    visible: true
-  };
   render() {
   return (
     <div>
