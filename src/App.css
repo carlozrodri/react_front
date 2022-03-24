@@ -57,7 +57,7 @@ body {
 .footer {
   width: 100%;
   height: 80px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   background-color: #1F306E;
   text-align: center;
   color: white;
