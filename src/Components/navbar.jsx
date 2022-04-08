@@ -12,7 +12,7 @@ function NavBar() {
     <Navbar.Brand href="http://localhost:3000/">
       <img
         src={logo}
-        height="95"
+        height="90"
         alt="logo"
       />
     </Navbar.Brand>
