@@ -11,7 +11,7 @@ function EmailBar() {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("http://localhost:8000/api/email", {
+      let res = await fetch("https://amazfunels.herokuapp.com/api/email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
