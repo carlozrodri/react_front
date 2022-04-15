@@ -59,9 +59,10 @@ body {
 .contador p {
   width:32px; /* overriding previous values */
   height:28px;
-background-color: red;
+  color:#fff;
+background-color: #1f306e;
   border-radius: 50%; /* here's the trick */
-  border: 1px solid red;
+  border: 1px solid #1f306e;
   counter-increment: css-counter 1; /* Increase the counter by 1. */
   }
   
