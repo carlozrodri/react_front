@@ -12,7 +12,8 @@ body {
   margin: 0px;
   font-family: Arial;
   line-height: 20px;
-  background-color: #1f306e;
+  background-color: #1f306e !important;
+  
 }
 /* a{
   text-decoration: none;
@@ -22,36 +23,50 @@ body {
 
 
 /* navbar  */
+.search-input{
+  width: 70%;
+  height: 40px;
+  border: none;
+  background-color: #1f306e;
 
+  /* border-radius: 15px; */
+  /* background-color: #1F306E;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  color: #000;
+  outline: none; */
+  /* box-shadow: 0px 0px 5px #000; */
+}
 .navbar-expand{
   justify-content: space-between !important;
 }
 .contenido{
   padding: 20px;
   display: grid;
+  background-color: #1f306e;
   list-style-type: none;
   counter-reset: css-counter 0;
   background: #1F306E;
   grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
   grid-auto-rows: auto;
   gap: 10px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
   cursor: pointer;
-  transition: 0.4s;
+  transition: 1.4s;
+  
 }
 .contador p {
   width:32px; /* overriding previous values */
   height:28px;
+background-color: red;
   border-radius: 50%; /* here's the trick */
-  border: 17px solid red;
- 
-
-
-    counter-increment: css-counter 1; /* Increase the counter by 1. */
+  border: 1px solid red;
+  counter-increment: css-counter 1; /* Increase the counter by 1. */
   }
   
 .contador p:before {
-  content: counter(css-counter) ". "; /* Apply counter before children's content. */
+  content: counter(css-counter); /* Apply counter before children's content. */
 }
 .navbar {
   height: 90px;
@@ -69,10 +84,10 @@ body {
 .card-title{
   text-align: center;
 }
-.footer {
+/* .footer {
   width: 100%;
   height: 80px;
-  /* border-radius: 20px; */
+
   background-color: #1F306E;
   text-align: center;
   color: white;
@@ -136,7 +151,7 @@ body {
   font-size:13px;
   color:#aaa;
   margin-bottom:0;
-}
+} */
 
 
 

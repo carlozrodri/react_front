@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import {  Card } from "react-bootstrap";
-
+import { motion } from "framer-motion"
 // import {  Card, CardGroup, Button  }
 //         from "react-bootstrap";
 
@@ -21,7 +21,7 @@ function EmailBar() {
         }),
       });
       let resJson = await res.json();
-      console.log(message);
+      console.log(resJson);
       if (res.status === 201) {
         setEmail("");
         setMessage("User created successfully");
@@ -49,7 +49,11 @@ function EmailBar() {
             />
    
           </div>
-          <button className="btn btn-primary" type="submit">Create</button>
+          <motion.button 
+          whileHover={{ scale: 1.1}}
+          whileTap={{ scale: 0.9 }}
+           className="btn btn-primary" 
+           type="submit">Create</motion.button>
         </form>
       </div>
     </Card.Body>

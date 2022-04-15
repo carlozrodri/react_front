@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Card } from "react-bootstrap";
 import AsyncSelect from "react-select/async";
+import { motion } from "framer-motion";
+// import chroma from 'chroma-js';
+import styled from "styled-components";
+
+// import { ColourOption, colourOptions } from '../data';
+// import Select, { StylesConfig } from 'react-select';
 
 function UpdateCompo() {
   // navbar
@@ -10,26 +16,11 @@ function UpdateCompo() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   const url = "https://amazfunels.herokuapp.com/api/";
-  // const customStyles = {
-  //   menu: (provided, state) => ({
-  //     ...provided,
-  //     width: state.selectProps.width,
-  //     borderBottom: '1px dotted pink',
-  //     color: state.selectProps.menuColor,
-  //     padding: 2,
-  //   }),
   
-  //   control: (_, { selectProps: { width }}) => ({
-  //     width: width
-  //   }),
-  
-  //   singleValue: (provided, state) => {
-  //     const opacity = state.isDisabled ? 0.5 : 1;
-  //     const transition = 'opacity 300ms';
-  
-  //     return { ...provided, opacity, transition };
-  //   }
-  // }
+
+
+
+
   // Note: the empty deps array [] means
   // this useEffect will run once
   // similar to componentDidMount()
@@ -92,13 +83,13 @@ function UpdateCompo() {
 
   // cargado
   else {
-    
     return (
       <div>
         <AsyncSelect
+          className="search-input"
           defaultOptions
-          width="20"   // styles={customStyles}
-          
+          backgroundColor="black"
+          width="20"
           placeholder="Search..."
           value={selectedValue}
           getOptionLabel={(e) => e.name}
@@ -110,9 +101,14 @@ function UpdateCompo() {
         <div className="contenido">
           {items.map((todo) => (
             <div key={todo.id} className="card">
+            
               <Card.Body>
-              <div className="contador"><p></p></div>
+              
+                <div className="contador">
+                  <p></p>
+                </div>
                 <div>
+                
                   <a href={todo.url_amazon}>
                     <Card.Img src={todo.item_pictures} />
                   </a>

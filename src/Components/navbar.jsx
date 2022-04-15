@@ -9,7 +9,7 @@ function NavBar() {
     return ( 
         <div>
         <Navbar>
-    <Navbar.Brand href="http://localhost:3000/">
+    <Navbar.Brand href="/">
       <img
         src={logo}
         height="90"
