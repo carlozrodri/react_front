@@ -14,7 +14,7 @@ import NavBar from "./Components/navbar";
 import UpdateCompo from "./Components/updatecompo";
 import EmailBar from "./Components/emailbar/emailbar";
 import FooterBar from "./Components/footer/footer";
-
+import JulioTest from "./Components/juliotest/julio";
 // App Component
 class App extends Component {
   render() {
@@ -23,7 +23,8 @@ class App extends Component {
         <NavBar />
         <UpdateCompo />
         <EmailBar />
-        <FooterBar />
+        {/* <FooterBar /> */}
+        {/* <JulioTest /> */}
       </div>
     );
   }
