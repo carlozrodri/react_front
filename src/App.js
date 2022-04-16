@@ -12,7 +12,8 @@ import "./App.css";
 
 import NavBar from "./Components/navbar";
 import UpdateCompo from "./Components/updatecompo";
-import EmailBar from "./Components/emailbar";
+import EmailBar from "./Components/emailbar/emailbar";
+import FooterBar from "./Components/footer/footer";
 
 // App Component
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
         <NavBar />
         <UpdateCompo />
         <EmailBar />
+        <FooterBar />
       </div>
     );
   }

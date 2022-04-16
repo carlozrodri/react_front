@@ -4,6 +4,7 @@ import {  Card } from "react-bootstrap";
 import { motion } from "framer-motion"
 // import {  Card, CardGroup, Button  }
 //         from "react-bootstrap";
+import "./emailbar.css";
 
 function EmailBar() {
   const [email, setEmail] = useState("");
