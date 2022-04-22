@@ -1,8 +1,49 @@
 :root{ 
  --color: #1f306e !important; 
+ --i-trans-fast:350ms;
 
 }
 /* RESET CSS */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,600");
+@font-face {
+  font-family: "MalgunGothic-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("static/fonts/Malgun Gothic Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MalgunGothic-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("static/fonts/malgun.ttf") format("truetype");
+}
+
+/* The following line is used to measure usage of this code in production. For more info see our usage billing page */
+@import url("https://px.animaapp.com/619f78f02a7034a087bb64b8.619f78f2b025b40396415a33.7pDZmdc.rcp.png");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 img{
   width: 100%;
@@ -13,22 +54,65 @@ body {
   font-family: Arial;
   line-height: 20px;
   background-color: #1f306e !important;
+
   
 }
-/* a{
+a:link {
   text-decoration: none;
-  color: #fff !important;
-} */
-/* FIN RESET CSS */
-
-
-/* navbar  */
-.search-input{
-  width: 70%;
 }
+a:hover {
+  text-decoration: center;
+}
+/* unvisited link */
+a:link {
+  color: #1f306e;
+}
+
+/* visited link */
+a:visited {
+  color: #1f306e;
+}
+
+/* mouse over link */
+a:hover {
+  color: #1ab315;
+}
+
+/* selected link */
+a:active {
+  color: rgb(255, 0, 234);
+}
+
+.search-input{
+  border-radius: 25px;
+  height: 70px;
+  border: none;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 1px;
+  outline: none;
+ 
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 70px;
+  width: 400px;
+  vertical-align: middle;
+  white-space:nowrap;
+  position:relative;
+}
+.search-input:focus{
+  width: 400px;
+}
+
+
 .contenido{
+  text-decoration: none !important;
   padding: 20px;
   display: grid;
+  grid-template-columns: fit-content(300px) fit-content(300px) 1fr;
+
   background-color: #1f306e;
   list-style-type: none;
   counter-reset: css-counter 0;
@@ -39,6 +123,7 @@ body {
   /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
   cursor: pointer;
   transition: 1.4s;
+
   
 }
 .contador p {
@@ -58,6 +143,15 @@ background-color: #1f306e;
   height: 90px;
   background: #1F306E;
 }
+
+
+
+.navbar img {
+  padding-top: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: 1.4s;
+}
 .card{
   text-align: center;
 }
@@ -69,6 +163,12 @@ background-color: #1f306e;
 
 .card-title{
   text-align: center;
+}
+.card-footer{
+  text-align: center;
+  padding: 0.5rem 3rem;
+  position: sticky;
+  
 }
 /* .footer {
   width: 100%;

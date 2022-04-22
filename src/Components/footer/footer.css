@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
-  background: #1F306E !important;
+  background: #EEEDFF !important;
   border-top: 4px solid var(--main-red);
 }
 

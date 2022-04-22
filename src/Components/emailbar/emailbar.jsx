@@ -26,7 +26,7 @@ function EmailBar() {
       if (res.status === 201) {
         setEmail("");
         setMessage("User created successfully");
-        alert("User created successfully");
+        alert("Thanks for Signing up");
       } else {
         setMessage("Some error occured");
       }
@@ -54,7 +54,7 @@ function EmailBar() {
           whileHover={{ scale: 1.1}}
           whileTap={{ scale: 0.9 }}
            className="btn btn-primary" 
-           type="submit">Create</motion.button>
+           type="submit">Sign Up</motion.button>
         </form>
       </div>
     </Card.Body>

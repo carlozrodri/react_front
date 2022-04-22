@@ -1,4 +1,19 @@
 import "./footer.css";
+import logo from "./output-onlinepngtools (2).png";
+//fortawesome icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTwitter,
+  faInstagram,
+  faFacebook,
+  faAmazon,
+} from "@fortawesome/free-brands-svg-icons";
+
+import 'react-responsive-select/dist/react-responsive-select.css';
+
+library.add(fas, faTwitter, faInstagram, faFacebook);
 
 function FooterBar() {
     return ( 
@@ -12,8 +27,9 @@ function FooterBar() {
   
 <div className="col-xs-12 col-sm-6 col-md-3">
 <div className="widget subscribe no-box">
-<h5 className="widget-title">COMPANY NAME<span></span></h5>
-<p>About the company, little discription will goes here.. </p>
+<img src={logo} alt="Logo" height="80" />
+
+
 </div>
 </div>
 
@@ -22,25 +38,16 @@ function FooterBar() {
 <h5 className="widget-title">Quick Links<span></span></h5>
 <ul className="thumbnail-widget">
 <li>
-<div className="thumb-content"><a href="#.">Get Started</a></div> 
+<div className="thumb-content"><a href="#.">Best Gadgets</a></div> 
 </li>
 <li>
-<div className="thumb-content"><a href="#.">Top Leaders</a></div> 
+<div className="thumb-content"><a href="#.">Newest Cameras</a></div> 
 </li>
 <li>
-<div className="thumb-content"><a href="#.">Success Stories</a></div> 
+<div className="thumb-content"><a href="#.">Top 10 Beauty</a></div> 
 </li>
 <li>
-<div className="thumb-content"><a href="#.">Event/Tickets</a></div> 
-</li>
-<li>
-<div className="thumb-content"><a href="#.">News</a></div>  
-</li>
-<li>
-<div className="thumb-content"><a href="#.">Lifestyle</a></div> 
-</li>
-<li>
-<div className="thumb-content"><a href="#.">About</a></div> 
+<div className="thumb-content"><a href="#.">Best Girldfriend Present</a></div> 
 </li>
 </ul>
 </div>
@@ -50,7 +57,7 @@ function FooterBar() {
 <div className="widget no-box">
 <h5 className="widget-title">Get Started<span></span></h5>
 <p>Get access to your full Training and Marketing Suite.</p>
-<a className="btn" href="https://bit.ly/3m9avif" target="_blank">Subscribe Now</a>
+
 </div>
 </div>
 
@@ -59,8 +66,12 @@ function FooterBar() {
 <div className="widget no-box">
 <h5 className="widget-title">Contact Us<span></span></h5>
 
-<p><a href="mailto:info@domain.com" title="glorythemes">info@domain.com</a></p>
-
+<p><a href="mailto:info@Thetop8.co.uk" title="glorythemes">info@Thetop8.co.uk</a></p>
+<FontAwesomeIcon icon={faFacebook} size="lg" />
+{' '}
+<FontAwesomeIcon icon={faTwitter} size="lg" />
+{' '}
+<FontAwesomeIcon icon={faInstagram} size="lg" />
 </div>
 </div>
 
@@ -72,7 +83,8 @@ function FooterBar() {
 <div className="container">
 <div className="row">
 <div className="col-md-12 text-center">
-<p>Copyright Company Name © 2021. All rights reserved.</p>
+<p>Copyright Top 8 © 2022. All rights reserved.</p>
+<p>Amazon, Amazon Prime, the Amazon logo and Amazon <br></br>Prime logo are trademarks of Amazon.com, Inc. or its affiliates</p>
 </div>
 </div>
 </div>

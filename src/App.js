@@ -5,6 +5,7 @@ import React, { Component } from "react";
 
 // Import Custom CSS
 import "./App.css";
+// import "./styleguide.css";
 
 // Import from react-router-dom
 
@@ -14,17 +15,23 @@ import NavBar from "./Components/navbar";
 import UpdateCompo from "./Components/updatecompo";
 import EmailBar from "./Components/emailbar/emailbar";
 import FooterBar from "./Components/footer/footer";
+
 import JulioTest from "./Components/juliotest/julio";
 // App Component
 class App extends Component {
   render() {
     return (
       <div>
+          {/* <JulioTest /> */}
+   
         <NavBar />
+     
         <UpdateCompo />
         <EmailBar />
-        {/* <FooterBar /> */}
-        {/* <JulioTest /> */}
+
+
+        <FooterBar />
+    
       </div>
     );
   }
