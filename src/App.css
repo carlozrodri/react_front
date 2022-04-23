@@ -1,61 +1,18 @@
-:root{ 
- --color: #1f306e !important; 
- --i-trans-fast:350ms;
-
-}
-/* RESET CSS */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,600");
-@font-face {
-  font-family: "MalgunGothic-Bold";
-  font-style: normal;
-  font-weight: 700;
-  src: url("static/fonts/Malgun Gothic Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MalgunGothic-Regular";
-  font-style: normal;
-  font-weight: 400;
-  src: url("static/fonts/malgun.ttf") format("truetype");
+:root {
+  --color: #1f306e !important;
+  --i-trans-fast: 350ms;
 }
 
-/* The following line is used to measure usage of this code in production. For more info see our usage billing page */
-@import url("https://px.animaapp.com/619f78f02a7034a087bb64b8.619f78f2b025b40396415a33.7pDZmdc.rcp.png");
 
-.screen a {
-  display: contents;
-  text-decoration: none;
-}
 
-.container-center-horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  pointer-events: none;
-  width: 100%;
-}
 
-.container-center-horizontal > * {
-  flex-shrink: 0;
-  pointer-events: auto;
-}
 
-* {
-  box-sizing: border-box;
-}
 
-img{
-  width: 100%;
-  max-width : 100%; 
-}
 body {
   margin: 0px;
-  font-family: Arial;
+  font-family: Helvetica;
   line-height: 20px;
   background-color: #1f306e !important;
-
-  
 }
 a:link {
   text-decoration: none;
@@ -83,31 +40,8 @@ a:active {
   color: rgb(255, 0, 234);
 }
 
-.search-input{
-  border-radius: 25px;
-  height: 70px;
-  border: none;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-  font-size: 16px;
-  padding-left: 20px;
-  padding-right: 1px;
-  outline: none;
- 
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 70px;
-  width: 400px;
-  vertical-align: middle;
-  white-space:nowrap;
-  position:relative;
-}
-.search-input:focus{
-  width: 400px;
-}
 
-
-.contenido{
+.contenido {
   text-decoration: none !important;
   padding: 20px;
   display: grid;
@@ -116,127 +50,46 @@ a:active {
   background-color: #1f306e;
   list-style-type: none;
   counter-reset: css-counter 0;
-  background: #1F306E;
-  grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
+  background: #1f306e;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   grid-auto-rows: auto;
   gap: 10px;
   /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
   cursor: pointer;
   transition: 1.4s;
-
-  
 }
+
+
 .contador p {
-  width:32px; /* overriding previous values */
-  height:28px;
-  color:#fff;
-background-color: #1f306e;
+  width: 32px; /* overriding previous values */
+  height: 28px;
+  color: #fff;
+  background-color: #1f306e;
   border-radius: 50%; /* here's the trick */
   border: 1px solid #1f306e;
   counter-increment: css-counter 1; /* Increase the counter by 1. */
-  }
-  
+}
+
 .contador p:before {
   content: counter(css-counter); /* Apply counter before children's content. */
 }
-.navbar {
-  height: 90px;
-  background: #1F306E;
-}
 
 
 
-.navbar img {
-  padding-top: 20px;
-  padding-left: 20px;
-  cursor: pointer;
-  transition: 1.4s;
-}
-.card{
+.card {
   text-align: center;
 }
 
-.card-img{
+.card-img {
   width: 130px;
   margin: auto;
 }
 
-.card-title{
+.card-title {
   text-align: center;
 }
-.card-footer{
+.card-footer {
   text-align: center;
   padding: 0.5rem 3rem;
   position: sticky;
-  
 }
-/* .footer {
-  width: 100%;
-  height: 80px;
-
-  background-color: #1F306E;
-  text-align: center;
-  color: white;
-}
-
-.footer-basic {
-  padding:40px 0;
-  background-color:#ffffff;
-  color:#4b4c4d;
-}
-
-.footer-basic ul {
-  padding:0;
-  list-style:none;
-  text-align:center;
-  font-size:18px;
-  line-height:1.6;
-  margin-bottom:0;
-}
-
-.footer-basic li {
-  padding:0 10px;
-}
-
-.footer-basic ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
-}
-
-.footer-basic ul a:hover {
-  opacity:1;
-}
-
-.footer-basic .social {
-  text-align:center;
-  padding-bottom:25px;
-}
-
-.footer-basic .social > a {
-  font-size:24px;
-  width:40px;
-  height:40px;
-  line-height:40px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  border:1px solid #ccc;
-  margin:0 8px;
-  color:inherit;
-  opacity:0.75;
-}
-
-.footer-basic .social > a:hover {
-  opacity:0.9;
-}
-
-.footer-basic .copyright {
-  margin-top:15px;
-  text-align:center;
-  font-size:13px;
-  color:#aaa;
-  margin-bottom:0;
-} */
-
-

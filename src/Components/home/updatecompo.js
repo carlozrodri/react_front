@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import AsyncSelect from "react-select/async";
 import { components } from "react-select";
 import { motion } from "framer-motion";
@@ -8,26 +8,16 @@ import { motion } from "framer-motion";
 
 //fortawesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+
 import {
-  faTwitter,
-  faFontAwesome,
   faSearchengin,
   faAmazon,
 } from "@fortawesome/free-brands-svg-icons";
 
-import 'react-responsive-select/dist/react-responsive-select.css';
 
-library.add(fas, faTwitter, faFontAwesome, faSearchengin);
 
-// import { ColourOption, colourOptions } from '../data';
-// import Select, { StylesConfig } from 'react-select';
 
 function UpdateCompo() {
-  // navbar
-  // const [inputValue, setValue] = useState("");
-  const [isShownHoverContent, setIsShownHoverContent] = useState(false);
 
   const [selectedValue, setSelectedValue] = useState("");
   const [isLoaded, setIsLoaded] = useState(false);
@@ -62,7 +52,7 @@ function UpdateCompo() {
     return (
       components.DropdownIndicator && (
         <components.DropdownIndicator {...props}>
-          <FontAwesomeIcon icon={faSearchengin} />
+          <FontAwesomeIcon icon={faSearchengin} size="2xl" />
         </components.DropdownIndicator>
       )
     );
@@ -151,71 +141,68 @@ function UpdateCompo() {
   else {
     return (
       <div>
-        <AsyncSelect
-          className="search-input"
-          defaultOptions
-          type="text"
-          components={{ DropdownIndicator }}
-          styles={customStyles}
-          onMouseEnter={selectedValue}
-   
-
-          placeholder="Search..."
-          value={selectedValue}
-          getOptionLabel={(e) => e.name}
-          loadOptions={loadOptions}
-          // onInputChange={handleInputChange}
-          onMouseOver={'lol'}
-          onChange={handleChange}
-        />
-
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 3 }}
+          viewport={{ once: true }}
+        >
+          <AsyncSelect
+            className="search-input"
+            defaultOptions
+            type="text"
+            components={{ DropdownIndicator }}
+            styles={customStyles}
+            onMouseEnter={selectedValue}
+            placeholder="Search..."
+            value={selectedValue}
+            getOptionLabel={(e) => e.name}
+            loadOptions={loadOptions}
+            // onInputChange={handleInputChange}
+            onMouseOver={"lol"}
+            onChange={handleChange}
+          />
+        </motion.div>
         <div className="contenido">
           {items.map((todo) => (
             <a className="card" href={todo.url_amazon}>
-            <motion.div 
-            
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 3 }}
-            viewport={{ once: true }} 
-            key={todo.id} 
-            >
-
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 3 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+               
+                key={todo.id}
+              >
                 <Card.Body>
                   <div className="contador">
                     <p></p>
                   </div>
                   <div>
-                   
-                      <Card.Img src={todo.item_pictures} />
-                    
+                    <Card.Img src={todo.item_pictures} />
                   </div>
                   <Card.Text>{todo.title} </Card.Text>
                   <Card.Text> {todo.item_description}</Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  
-                    <motion.button
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      className="btn btn-primary"
-                      type="submit"
-                    >
-                      Check it NOW!
-                    </motion.button>
-                 
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="btn btn-primary"
+                    type="submit"
+                  >
+                    Check it NOW!
+                  </motion.button>
+
                   <br />
                   <FontAwesomeIcon icon={faAmazon} size="lg" />
-                  <small className="text-muted">
-                  {'  '}Amazon.co.uk
-                  </small>
-                 
+                  <small className="text-muted">{"  "}Amazon.co.uk</small>
                 </Card.Footer>
-    
-            </motion.div>
+              </motion.div>
             </a>
           ))}
         </div>
-        
       </div>
     );
   }

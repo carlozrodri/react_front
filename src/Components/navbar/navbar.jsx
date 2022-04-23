@@ -4,6 +4,7 @@ import { Navbar  }
 from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import logo from "./thetop8.png"
+import "./navbar.css"
 
 function NavBar() {
     return ( 
@@ -12,7 +13,7 @@ function NavBar() {
     <Navbar.Brand href="/">
       <img
         src={logo}
-        height="90"
+        height="120"
         alt="logo"
       />
     </Navbar.Brand>

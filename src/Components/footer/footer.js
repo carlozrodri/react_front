@@ -8,7 +8,7 @@ import {
   faTwitter,
   faInstagram,
   faFacebook,
-  faAmazon,
+
 } from "@fortawesome/free-brands-svg-icons";
 
 import 'react-responsive-select/dist/react-responsive-select.css';
@@ -67,11 +67,12 @@ function FooterBar() {
 <h5 className="widget-title">Contact Us<span></span></h5>
 
 <p><a href="mailto:info@Thetop8.co.uk" title="glorythemes">info@Thetop8.co.uk</a></p>
-<FontAwesomeIcon icon={faFacebook} size="lg" />
+<FontAwesomeIcon icon={faFacebook} size="2x" />
 {' '}
-<FontAwesomeIcon icon={faTwitter} size="lg" />
+<FontAwesomeIcon icon={faTwitter} size="2x" />
 {' '}
-<FontAwesomeIcon icon={faInstagram} size="lg" />
+<FontAwesomeIcon icon={faInstagram} size="2x" />
+
 </div>
 </div>
 

@@ -11,8 +11,8 @@ import "./App.css";
 
 // Import other React Component
 
-import NavBar from "./Components/navbar";
-import UpdateCompo from "./Components/updatecompo";
+import NavBar from "./Components/navbar/navbar";
+import UpdateCompo from "./Components/home/updatecompo";
 import EmailBar from "./Components/emailbar/emailbar";
 import FooterBar from "./Components/footer/footer";
 
@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div>
-          {/* <JulioTest /> */}
+          <JulioTest />
    
         <NavBar />
      
