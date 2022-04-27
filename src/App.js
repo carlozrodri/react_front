@@ -1,40 +1,54 @@
 // Import React
-import React, { Component } from "react";
-
-// Import Bootstrap
-
-// Import Custom CSS
+import React, { Component, createContext } from "react";
 import "./App.css";
-// import "./styleguide.css";
-
-// Import from react-router-dom
-
-// Import other React Component
+import {
+  BrowserRouter as Router,
+  Switch,
+  Routes,
+  Route,
+  Link,
+  useParams,
+} from "react-router-dom";
 
 import NavBar from "./Components/navbar/navbar";
 import UpdateCompo from "./Components/home/updatecompo";
 import EmailBar from "./Components/emailbar/emailbar";
 import FooterBar from "./Components/footer/footer";
-
 import JulioTest from "./Components/juliotest/julio";
+
 // App Component
-class App extends Component {
-  render() {
-    return (
+
+export default function App() {
+  return (
+    <Router>
       <div>
-          <JulioTest />
-   
+        <Switch>
+          <Route path="/:id" children={<Child />} />
+        </Switch>
         <NavBar />
-     
         <UpdateCompo />
         <EmailBar />
-
-
         <FooterBar />
-    
       </div>
-    );
-  }
+    </Router>
+  );
 }
 
-export default App;
+function Child() {
+  const { id } = useParams();
+  const context = createContext(id);
+  const url = "https://amazfunels.herokuapp.com/api/";
+console.log(typeof id)
+  fetch(`${url}?search=${id}`)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      return data;
+    });
+
+  return (
+    <div>
+      <h2>{id}</h2>
+    </div>
+  );
+}

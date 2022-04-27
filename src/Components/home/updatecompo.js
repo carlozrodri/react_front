@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Card } from "react-bootstrap";
 import AsyncSelect from "react-select/async";
 import { components } from "react-select";
 import { motion } from "framer-motion";
-// import chroma from 'chroma-js';
+import {customStyles} from "./barstyles";
+import Child from '../../App';
 
+// import chroma from 'chroma-js';
+// import FetchData2 from "../data/data";
 //fortawesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import {
   faSearchengin,
   faAmazon,
 } from "@fortawesome/free-brands-svg-icons";
-
-
 
 
 function UpdateCompo() {
@@ -23,11 +23,10 @@ function UpdateCompo() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   const url = "https://amazfunels.herokuapp.com/api/";
+ 
 
-  // props
-  // Note: the empty deps array [] means
-  // this useEffect will run once
-  // similar to componentDidMount()
+
+
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -58,46 +57,6 @@ function UpdateCompo() {
     );
   };
 
-  const customStyles = {
-    control: (base, state) => ({
-      ...base,
-
-      fontSize: 18,
-      border: state.isFocused ? 0 : 0,
-      boxShadow: state.isFocused ? 0 : 0,
-      cursor: "text",
-      borderRadius: 10,
-      borderBottom: "solid 1px",
-    }),
-
-    option: (styles, { isFocused }) => {
-      return {
-        ...styles,
-        cursor: "pointer",
-        backgroundColor: isFocused ? "white" : "white",
-        color: isFocused ? "rgba(255, 80, 1086)" : "black",
-        lineHeight: 2,
-      };
-    },
-
-    input: (styles) => ({
-      ...styles,
-      color: "black",
-      fontFamily: "arial",
-    }),
-
-    menu: (styles) => ({
-      ...styles,
-      marginTop: 0,
-      boxShadow: "none",
-      borderRadius: 0,
-    }),
-
-    singleValue: (styles) => ({
-      ...styles,
-      color: "rgba(255, 80, 86)",
-    }),
-  };
   // handle selection
   const handleChange = (value) => {
     setSelectedValue(value);
@@ -141,6 +100,8 @@ function UpdateCompo() {
   else {
     return (
       <div>
+
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 3 }}
@@ -172,7 +133,6 @@ function UpdateCompo() {
                 transition={{ duration: 0.3 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-               
                 key={todo.id}
               >
                 <Card.Body>
@@ -200,7 +160,9 @@ function UpdateCompo() {
                   <small className="text-muted">{"  "}Amazon.co.uk</small>
                 </Card.Footer>
               </motion.div>
+              
             </a>
+            
           ))}
         </div>
       </div>

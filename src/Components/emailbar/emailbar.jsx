@@ -35,6 +35,18 @@ function EmailBar() {
     }
   };
   return (
+
+    <div>
+    <iframe 
+src="https://rcm-eu.amazon-adsystem.com/e/cm?o=2&p=12&l=ur1&category=pw&banner=1XP978DSAQYXNWEKVMR2&f=ifr&linkID=e8a9f646624d52872ad9acc8a5468e5c&t=279200-21&tracking_id=279200-21" 
+width="300" 
+height="250" 
+scrolling="no" 
+border="0" 
+
+sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"
+
+/>
     <Card.Body className="emailBar">
       <div className="login-box">
         <h2>Sign up to receive the best deals from TheTop8</h2>
@@ -58,6 +70,8 @@ function EmailBar() {
         </form>
       </div>
     </Card.Body>
+    </div>
+    
   );
 }
 
