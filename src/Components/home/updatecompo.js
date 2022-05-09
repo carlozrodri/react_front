@@ -1,39 +1,44 @@
-import React, { useState, useEffect, useContext } from "react";
-import "bootstrap/dist/css/bootstrap.css";
-import { Card } from "react-bootstrap";
-import AsyncSelect from "react-select/async";
-import { components } from "react-select";
-import { motion } from "framer-motion";
-import {customStyles} from "./barstyles";
-import Child from '../../App';
+import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css';
+import { Card } from 'react-bootstrap';
+import AsyncSelect from 'react-select/async';
+import { components } from 'react-select';
+import { motion } from 'framer-motion';
+import { customStyles } from './barstyles';
 
 // import chroma from 'chroma-js';
 // import FetchData2 from "../data/data";
 //fortawesome icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSearchengin,
-  faAmazon,
-} from "@fortawesome/free-brands-svg-icons";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearchengin, faAmazon } from '@fortawesome/free-brands-svg-icons';
 
 function UpdateCompo() {
-
-  const [selectedValue, setSelectedValue] = useState("");
+  const [selectedValue, setSelectedValue] = useState('');
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
-  const url = "https://amazfunels.herokuapp.com/api/";
- 
+  const history = useHistory();
+  const url = 'https://amazfunels.herokuapp.com/api/';
 
 
 
   useEffect(() => {
-    fetch(url)
+    let baseUrl;
+    let category = '';
+    console.log(history);
+    if (history?.location?.pathname?.split('/')[1]) {
+      category = history?.location?.pathname?.split('/')[1];
+      baseUrl = `${url}categorias/?search=${category}`;
+    } else {
+      baseUrl = url;
+    }
+    fetch(baseUrl)
       .then((res) => res.json())
       .then(
         (result) => {
           setIsLoaded(true);
           setItems(result);
+          setSelectedValue({ name: category });
         },
         (error) => {
           setIsLoaded(true);
