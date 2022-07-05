@@ -75,11 +75,19 @@ a:active {
 }
 
 
-
 .card {
+  align-self: center;
   text-align: center;
+  height: 100%;
+    
 }
 
+.card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: fill;
+}
 .card-img {
   width: 130px;
   margin: auto;
