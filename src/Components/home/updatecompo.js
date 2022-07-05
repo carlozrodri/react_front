@@ -132,6 +132,7 @@ function UpdateCompo() {
           {items.map((todo) => (
             <a className="card" href={todo.url_amazon}>
               <motion.div
+                className="card-container"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 3 }}
                 viewport={{ once: true }}
@@ -144,10 +145,8 @@ function UpdateCompo() {
                   <div className="contador">
                     <p></p>
                   </div>
-                  <div>
-                    <Card.Img src={todo.item_pictures} />
-                  </div>
-                  <Card.Text>{todo.title} </Card.Text>
+                    <Card.Img src={todo.item_pictures} />     
+                  <Card.Text>{todo.title} </Card.Text>    
                   <Card.Text> {todo.item_description}</Card.Text>
                 </Card.Body>
                 <Card.Footer>
