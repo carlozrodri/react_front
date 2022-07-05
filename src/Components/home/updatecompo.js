@@ -1,33 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.css';
-import { Card } from 'react-bootstrap';
-import AsyncSelect from 'react-select/async';
-import { components } from 'react-select';
-import { motion } from 'framer-motion';
-import { customStyles } from './barstyles';
+import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
+import { Card } from "react-bootstrap";
+import AsyncSelect from "react-select/async";
+import { components } from "react-select";
+import { motion } from "framer-motion";
+import { customStyles } from "./barstyles";
 
 // import chroma from 'chroma-js';
 // import FetchData2 from "../data/data";
 //fortawesome icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearchengin, faAmazon } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearchengin, faAmazon } from "@fortawesome/free-brands-svg-icons";
 
 function UpdateCompo() {
-  const [selectedValue, setSelectedValue] = useState('');
+  const [selectedValue, setSelectedValue] = useState("");
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   const history = useHistory();
-  const url = 'https://amazfunels.herokuapp.com/api/';
-
-
+  const url = "https://amazfunels.herokuapp.com/api/";
 
   useEffect(() => {
     let baseUrl;
-    let category = '';
+    let category = "";
     console.log(history);
-    if (history?.location?.pathname?.split('/')[1]) {
-      category = history?.location?.pathname?.split('/')[1];
+    if (history?.location?.pathname?.split("/")[1]) {
+      category = history?.location?.pathname?.split("/")[1];
       baseUrl = `${url}categorias/?search=${category}`;
     } else {
       baseUrl = url;
@@ -105,8 +103,6 @@ function UpdateCompo() {
   else {
     return (
       <div>
-
-
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 3 }}
@@ -142,12 +138,16 @@ function UpdateCompo() {
                 key={todo.id}
               >
                 <Card.Body>
-                  <div className="contador">
-                    <p></p>
+                  <div className="body-carta">
+                    <div className="contador">
+                      <p></p>
+                    </div>
+                    <div className="card-contenido">
+                      <Card.Img style={{ backgroundImage: `url(${todo.item_pictures})`}}/>
+                      <Card.Text> {todo.item_description}</Card.Text>
+                    </div>
                   </div>
-                    <Card.Img src={todo.item_pictures} />     
-                  <Card.Text>{todo.title} </Card.Text>    
-                  <Card.Text> {todo.item_description}</Card.Text>
+                  {/* <Card.Text>{todo.title} </Card.Text>     */}
                 </Card.Body>
                 <Card.Footer>
                   <motion.button
@@ -164,9 +164,7 @@ function UpdateCompo() {
                   <small className="text-muted">{"  "}Amazon.co.uk</small>
                 </Card.Footer>
               </motion.div>
-              
             </a>
-            
           ))}
         </div>
       </div>
