@@ -82,15 +82,28 @@ a:active {
     
 }
 
+
 .card-container{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: fill;
 }
+
 .card-img {
-  width: 130px;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  height: 300px;
+  width: fill;
   margin: auto;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
 
 .card-title {
