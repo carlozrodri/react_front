@@ -130,17 +130,14 @@ function UpdateCompo() {
         </motion.div>
         <div className="contenido">
           {items.map((todo) => (
-            <a className="card" href={todo.url_amazon}>
-              <motion.div
-                className="card-container"
-                initial={{ opacity: 0 }}
+            <motion.a className="card" href={todo.url_amazon}   initial={{ opacity: 0 }}
                 whileInView={{ opacity: 3 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                key={todo.id}
-              >
+                key={todo.id}>
+
                 <Card.Body>
                   <div className="contador">
                     <p></p>
@@ -163,9 +160,9 @@ function UpdateCompo() {
                   <FontAwesomeIcon icon={faAmazon} size="lg" />
                   <small className="text-muted">{"  "}Amazon.co.uk</small>
                 </Card.Footer>
-              </motion.div>
+           
               
-            </a>
+            </motion.a>
             
           ))}
         </div>
