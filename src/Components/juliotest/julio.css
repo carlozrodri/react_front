@@ -1,0 +1,152 @@
+.component-navbar {
+    align-items: center;
+    background-color: #33c1ff;
+    box-shadow: 0px 3px 6px #00000029;
+    display: flex;
+    height: 176px;
+    /* min-width: 1920px; */
+    padding: 0 105px;
+  }
+  
+  .thetop87119b5f18b711 {
+    height: 110px;
+    margin-top: 2.0px;
+    object-fit: cover;
+    width: 283px;
+  }
+  
+  .group-5098 {
+    align-items: flex-end;
+    background-color: var(--white);
+    border-radius: 14px;
+    display: flex;
+    height: 65px;
+    justify-content: space-between;
+    margin-left: 101px;
+    margin-top: 7.0px;
+    width: 957px;
+  }
+  
+  .search-product {
+    color: var(--granite-gray);
+    font-family: var(--font-family-malgungothic-regular);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    height: 31px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-bottom: -11.4px;
+    margin-left: 29px;
+    opacity: 0.81;
+    white-space: nowrap;
+    width: 153px;
+  }
+  
+  .group-5189 {
+    align-items: flex-start;
+    display: flex;
+    min-width: 150px;
+  }
+  
+  .overlap-group {
+    height: 65px;
+    position: relative;
+    width: 150px;
+  }
+  
+  .path-5076 {
+    display: block;
+    height: 65px;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(-25px, 0);
+    width: 150px;
+  }
+  
+  .path-5076.animate-enter {
+    animation: animate-enter-frames 0.20s ease 0.00s 1 normal forwards;
+    display: block;
+    opacity: 0;
+    transform: translate(-25px, 0);
+  }
+  
+  .icon-search {
+    height: 39px;
+    left: 56px;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 38px;
+  }
+  
+  .group-5203 {
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: 28.0px;
+    margin-left: 101px;
+    min-width: 86px;
+  }
+  
+  .overlap-group1 {
+    height: 84px;
+    position: relative;
+    width: 86px;
+  }
+  
+  .icon-cloud {
+    height: 65px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 19px;
+    width: 65px;
+  }
+  
+  .ellipse-235 {
+    background-color: var(--white);
+    border-radius: 17.5px;
+    height: 35px;
+    left: 51px;
+    position: absolute;
+    top: 0;
+    width: 35px;
+  }
+  
+  .number {
+    left: 63px;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    top: 5px;
+    white-space: nowrap;
+  }
+  
+  .united-kingdom {
+    height: 77px;
+    margin-bottom: 9.0px;
+    margin-left: 56px;
+    object-fit: cover;
+    width: 77px;
+  }
+  
+  .drop-down-arrow-3 {
+    height: 28px;
+    margin-left: 11px;
+    margin-top: 2.0px;
+    object-fit: cover;
+    width: 28px;
+  }
+  
+  @keyframes animate-enter-frames {
+    from{opacity: 0;
+  transform: translate(-25px, 0);
+  }
+  to{opacity: 1;
+  transform: translate(0,0);
+  }
+  }
+  
+  

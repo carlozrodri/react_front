@@ -1,30 +1,21 @@
 // Import React
-import React, { Component } from "react";
-
-// Import Bootstrap
-
-// Import Custom CSS
+import React from "react";
 import "./App.css";
-
-// Import from react-router-dom
-
-// Import other React Component
-
-import NavBar from "./Components/navbar";
-import UpdateCompo from "./Components/updatecompo";
-import EmailBar from "./Components/emailbar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // App Component
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <NavBar />
-        <UpdateCompo />
-        <EmailBar />
-      </div>
-    );
-  }
-}
+import Home from "./pages/Home";
+import Contactame from "./pages/Contactame";
 
-export default App;
+export default function App() {
+  return (
+    <Router>
+      <div>
+        <Switch>
+          <Route path='/Contactame' children={<Contactame />} />
+          <Route path='*' children={<Home />} />
+        </Switch>
+      </div>
+    </Router>
+  );
+}
