@@ -103,7 +103,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+  padding: 3rem 1rem !important;
 }
 
 .card-title {
