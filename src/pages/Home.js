@@ -7,6 +7,7 @@ import FooterBar from '../Components/footer/footer';
 const Home = () => {
   return (
     <Fragment>
+      
       <NavBar />
       <UpdateCompo />
       <EmailBar />
