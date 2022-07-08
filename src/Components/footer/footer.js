@@ -15,6 +15,7 @@ import "react-responsive-select/dist/react-responsive-select.css";
 library.add(fas, faTwitter, faInstagram, faFacebook);
 
 function FooterBar() {
+
   return (
     <div>
       <footer id="footer" className="footer-1">
@@ -29,6 +30,53 @@ function FooterBar() {
                   <img src={logo} alt="Logo" height="80" />
                 </div>
               </div>
+    return ( 
+        
+        <div>
+<footer id="footer" className="footer-1">
+<div className="
+">
+<div className="container">
+<div className="row">
+  
+<div className="col-xs-12 col-sm-6 col-md-3">
+<div className="widget subscribe no-box">
+<img src={logo} alt="Logo" height="80" />
+
+
+</div>
+</div>
+
+<div className="col-xs-12 col-sm-6 col-md-3">
+<div className="widget no-box">
+<h5 className="widget-title">Quick Links<span></span></h5>
+<ul className="thumbnail-widget">
+<li>
+<div className="thumb-content"><a href="#.">Best Gadgets</a></div> 
+</li>
+<li>
+<div className="thumb-content"><a href="#.">Newest Cameras</a></div> 
+</li>
+<li>
+<div className="thumb-content"><a href="#.">Top 10 Beauty</a></div> 
+</li>
+<li>
+<div className="thumb-content"><a href="#.">Best Girldfriend Present</a></div> 
+</li>
+</ul>
+</div>
+</div>
+
+<div className="col-xs-12 col-sm-6 col-md-3">
+<div className="widget no-box">
+<h5 className="widget-title">Best Quality<span></span></h5>
+<p>We only show you the best Amazon items.</p>
+
+</div>
+</div>
+
+<div className="col-xs-12 col-sm-6 col-md-3">
+
 
               <div className="col-xs-12 col-sm-6 col-md-3">
                 <div className="widget no-box">

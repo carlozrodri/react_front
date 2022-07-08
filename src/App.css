@@ -2,12 +2,6 @@
   --color: #1f306e !important;
   --i-trans-fast: 350ms;
 }
-
-
-
-
-
-
 body {
   margin: 0px;
   font-family: Helvetica;
@@ -103,7 +97,8 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+  padding: 3rem 1rem !important;
+
 }
 
 .card-title {

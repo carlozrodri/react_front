@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Header = styled.header`
+
   background: green;
+  background: blue;
   position: relative;
   right: 100;
   display: flex;
@@ -15,6 +17,11 @@ export const Nav = styled(motion.nav)`
   background-color: brown;
   height: 70vh;
   width: 100vw;
+
+  background-color: blue;
+  height: 40vh;
+  width: 30vw;
+
   position: fixed;
   top: 0;
   z-index: 1;
