@@ -18,10 +18,7 @@ function FooterBar() {
   return (
     <div>
       <footer id="footer" className="footer-1">
-        <div
-          className="
-"
-        >
+       
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-6 col-md-3">
@@ -86,7 +83,7 @@ function FooterBar() {
               </div>
             </div>
           </div>
-        </div>
+       
 
         <div className="footer-copyright">
           <div className="container">
