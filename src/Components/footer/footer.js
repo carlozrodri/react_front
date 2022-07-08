@@ -9,17 +9,13 @@ import {
   faInstagram,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-
 import "react-responsive-select/dist/react-responsive-select.css";
-
 library.add(fas, faTwitter, faInstagram, faFacebook);
-
 function FooterBar() {
-
   return (
     <div>
       <footer id="footer" className="footer-1">
-       
+
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-6 col-md-3">
@@ -27,54 +23,6 @@ function FooterBar() {
                   <img src={logo} alt="Logo" height="80" />
                 </div>
               </div>
-    return ( 
-        
-        <div>
-<footer id="footer" className="footer-1">
-<div className="
-">
-<div className="container">
-<div className="row">
-  
-<div className="col-xs-12 col-sm-6 col-md-3">
-<div className="widget subscribe no-box">
-<img src={logo} alt="Logo" height="80" />
-
-
-</div>
-</div>
-
-<div className="col-xs-12 col-sm-6 col-md-3">
-<div className="widget no-box">
-<h5 className="widget-title">Quick Links<span></span></h5>
-<ul className="thumbnail-widget">
-<li>
-<div className="thumb-content"><a href="#.">Best Gadgets</a></div> 
-</li>
-<li>
-<div className="thumb-content"><a href="#.">Newest Cameras</a></div> 
-</li>
-<li>
-<div className="thumb-content"><a href="#.">Top 10 Beauty</a></div> 
-</li>
-<li>
-<div className="thumb-content"><a href="#.">Best Girldfriend Present</a></div> 
-</li>
-</ul>
-</div>
-</div>
-
-<div className="col-xs-12 col-sm-6 col-md-3">
-<div className="widget no-box">
-<h5 className="widget-title">Best Quality<span></span></h5>
-<p>We only show you the best Amazon items.</p>
-
-</div>
-</div>
-
-<div className="col-xs-12 col-sm-6 col-md-3">
-
-
               <div className="col-xs-12 col-sm-6 col-md-3">
                 <div className="widget no-box">
                   <h5 className="widget-title">
@@ -83,22 +31,22 @@ function FooterBar() {
                   <ul className="thumbnail-widget">
                     <li>
                       <div className="thumb-content">
-                        <a href="/best%20gadgets">Best Gadgets</a>
+                        <a href="/Best Gadgets">Best Gadgets</a>
                       </div>
                     </li>
                     <li>
                       <div className="thumb-content">
-                        <a href="/cameras">Newest Cameras</a>
+                        <a href="/Newest Cameras">Newest Cameras</a>
                       </div>
                     </li>
                     <li>
                       <div className="thumb-content">
-                        <a href="/Top%2010%20Beauty">Top 10 Beauty</a>
+                        <a href="/Top 10 Beauty">Top 10 Beauty</a>
                       </div>
                     </li>
                     <li>
                       <div className="thumb-content">
-                        <a href="/Best%20Girlfriend%20Present">Best Girlfriend Present</a>
+                        <a href="/Best Girldfriend Present">Best Girldfriend Present</a>
                       </div>
                     </li>
                   </ul>
@@ -108,12 +56,11 @@ function FooterBar() {
               <div className="col-xs-12 col-sm-6 col-md-3">
                 <div className="widget no-box">
                   <h5 className="widget-title">
-                    Get Started<span></span>
+                    Best Quality<span></span>
                   </h5>
-                  <p>Get access to your full Training and Marketing Suite.</p>
+                  <p>We only show you the best Amazon items.</p>
                 </div>
               </div>
-
               <div className="col-xs-12 col-sm-6 col-md-3">
                 <div className="widget no-box">
                   <h5 className="widget-title">
@@ -131,7 +78,7 @@ function FooterBar() {
               </div>
             </div>
           </div>
-       
+        
 
         <div className="footer-copyright">
           <div className="container">
@@ -151,5 +98,4 @@ function FooterBar() {
     </div>
   );
 }
-
 export default FooterBar;
