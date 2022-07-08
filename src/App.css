@@ -52,6 +52,15 @@ a:active {
   cursor: pointer;
   transition: 1.4s;
 }
+@media only screen and (max-width: 450px) {
+  /* For tablets: */
+  .contenido {
+    grid-template-columns: repeat(2, minmax(183px, 1fr));
+
+   
+    }
+  
+}
 
 
 .contador p {
