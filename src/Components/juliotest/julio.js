@@ -16,7 +16,12 @@ function JulioTest() {
 
   const menuVariants = {
     opened: {
+
       top: 0,
+
+      top: 100,
+      left: (window.innerWidth - 30) / 1.427,
+
       transition: {
         when: "beforeChildren",
         staggerChildren: 0.5,
