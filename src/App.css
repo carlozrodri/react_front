@@ -56,8 +56,11 @@ a:active {
   /* For tablets: */
   .contenido {
     grid-template-columns: repeat(2, minmax(183px, 1fr));
-
+    
    
+    }
+    .card-body {
+    height: 10%   !important;
     }
   
 }
@@ -85,14 +88,6 @@ a:active {
   text-align: center;
   height: 100%;
     
-}
-
-
-.card-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: fill;
 }
 
 .card-img {
