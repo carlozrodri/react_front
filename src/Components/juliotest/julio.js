@@ -43,11 +43,14 @@ function JulioTest() {
 
   return (
     <div className="App">
-      <Header>
+      <Header       
+          animate={isOpen ? "opened" : "closed"}
+          whileHover={{ scale: 1.8 }}
+          onClick={() => setIsOpen(!isOpen)}>
         <SvgBox
           variants={iconVariants}
           animate={isOpen ? "opened" : "closed"}
-          whileHover={{ scale: 1.4 }}
+          whileHover={{ scale: 1.8 }}
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg

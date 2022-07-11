@@ -52,6 +52,18 @@ a:active {
   cursor: pointer;
   transition: 1.4s;
 }
+@media only screen and (max-width: 450px) {
+  /* For tablets: */
+  .contenido {
+    grid-template-columns: repeat(2, minmax(183px, 1fr));
+    
+   
+    }
+    .card-body {
+    height: 10%   !important;
+    }
+  
+}
 
 
 .contador p {
@@ -67,21 +79,15 @@ a:active {
 .contador p:before {
   content: counter(css-counter); /* Apply counter before children's content. */
 }
-
+.botonCheck{
+  background-color: #1f306e !important;
+}
 
 .card {
   align-self: center;
   text-align: center;
   height: 100%;
     
-}
-
-
-.card-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: fill;
 }
 
 .card-img {
