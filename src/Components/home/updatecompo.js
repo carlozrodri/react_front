@@ -153,7 +153,7 @@ function UpdateCompo() {
                   <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    className="btn btn-primary botonCheck"
+                    className="btn btn-primary"
                     type="submit"
                   >
                     Check it NOW!

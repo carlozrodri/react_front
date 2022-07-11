@@ -67,9 +67,7 @@ a:active {
 .contador p:before {
   content: counter(css-counter); /* Apply counter before children's content. */
 }
-.botonCheck{
-  background-color: #1f306e !important;
-}
+
 
 .card {
   align-self: center;
