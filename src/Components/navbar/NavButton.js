@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Header, Nav, Link, SvgBox } from "./Styles";
 
 
-function JulioTest() {
+function NavButton() {
   const [isOpen, setIsOpen] = useState(false);
 
   const iconVariants = {
@@ -81,4 +81,4 @@ function JulioTest() {
   );
 }
 
-export default JulioTest;
+export default NavButton;

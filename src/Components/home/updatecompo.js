@@ -132,7 +132,7 @@ function UpdateCompo() {
               whileInView={{ opacity: 3 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3 }}
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 0.9 }}
               whileTap={{ scale: 0.9 }}
               key={todo.id}
               href={todo.url_amazon}
@@ -141,11 +141,12 @@ function UpdateCompo() {
                 <div className="contador">
                   <p></p>
                 </div>
+                <div className="category-text-card">{todo.category} </div>    
                   <Card.Img style={{ backgroundImage: `url(${todo.item_pictures})` }}
                   />
                   <Card.Text> {todo.item_description}</Card.Text>
                 
-                {/* <Card.Text>{todo.title} </Card.Text>     */}
+               
               </Card.Body>
               <Card.Footer>
                 <motion.button
