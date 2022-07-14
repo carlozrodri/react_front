@@ -40,7 +40,7 @@ a:active {
   padding: 20px;
   display: grid;
   grid-template-columns: fit-content(300px) fit-content(300px) 1fr;
-
+  
   background-color: #1f306e;
   list-style-type: none;
   counter-reset: css-counter 0;
@@ -53,13 +53,11 @@ a:active {
   transition: 1.4s;
 }
 @media only screen and (max-width: 450px) {
-  /* For tablets: */
   .contenido {
     grid-template-columns: repeat(2, minmax(183px, 1fr));
-
-   
-    }
-  
+    justify-content: space-between;
+    
+  }
 }
 
 
@@ -84,15 +82,8 @@ a:active {
   align-self: center;
   text-align: center;
   height: 100%;
-    
-}
-
-
-.card-container{
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  height: fill;
+    
 }
 
 .card-img {
@@ -107,6 +98,7 @@ a:active {
 
 .card-body{
   display: flex;
+  flex: 0 1 auto !important;
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem 1rem !important;

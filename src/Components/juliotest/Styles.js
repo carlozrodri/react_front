@@ -29,7 +29,7 @@ export const Nav = styled(motion.nav)`
 `;
 
 export const Link = styled(motion.li)`
-  color: white;
+  color: black;
   margin-bottom: 1.6rem;
   font-size: 1.4rem;
 `;

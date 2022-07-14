@@ -126,44 +126,41 @@ function UpdateCompo() {
         </motion.div>
         <div className="contenido">
           {items.map((todo) => (
-            <motion.a className="card"                 initial={{ opacity: 0 }}
-                whileInView={{ opacity: 3 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3 }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                key={todo.id} href={todo.url_amazon}>
-              <motion.div
-                className="card-container"
+            <motion.a
+              className="card"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 3 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              key={todo.id}
+              href={todo.url_amazon}
+            >
+              <Card.Body>
+                <div className="contador">
+                  <p></p>
+                </div>
+                  <Card.Img style={{ backgroundImage: `url(${todo.item_pictures})` }}
+                  />
+                  <Card.Text> {todo.item_description}</Card.Text>
+                
+                {/* <Card.Text>{todo.title} </Card.Text>     */}
+              </Card.Body>
+              <Card.Footer>
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="btn btn-primary botonCheck"
+                  type="submit"
+                >
+                  Check it NOW!
+                </motion.button>
 
-              >
-                <Card.Body>
-                  <div className="body-carta">
-                    <div className="contador">
-                      <p></p>
-                    </div>
-                    <div className="card-contenido">
-                      <Card.Img style={{ backgroundImage: `url(${todo.item_pictures})`}}/>
-                      <Card.Text> {todo.item_description}</Card.Text>
-                    </div>
-                  </div>
-                  {/* <Card.Text>{todo.title} </Card.Text>     */}
-                </Card.Body>
-                <Card.Footer>
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="btn btn-primary botonCheck"
-                    type="submit"
-                  >
-                    Check it NOW!
-                  </motion.button>
-
-                  <br />
-                  <FontAwesomeIcon icon={faAmazon} size="lg" />
-                  <small className="text-muted">{"  "}Amazon.co.uk</small>
-                </Card.Footer>
-              </motion.div>
+                <br />
+                <FontAwesomeIcon icon={faAmazon} size="lg" />
+                <small className="text-muted">{"  "}Amazon.co.uk</small>
+              </Card.Footer>
             </motion.a>
           ))}
         </div>
