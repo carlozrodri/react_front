@@ -15,7 +15,7 @@ function ItemList() {
           whileTap={{ scale: 0.9 }}
           class="col"
         >
-          Sportwear
+          Beauty
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}

@@ -33,7 +33,10 @@ a:hover {
 a:active {
   color: rgb(255, 0, 234);
 }
-
+.category-text-card{
+  margin-bottom: 1rem;
+  margin-top: -2rem
+}
 
 .contenido {
   text-decoration: none !important;
