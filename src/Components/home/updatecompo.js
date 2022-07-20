@@ -6,7 +6,7 @@ import AsyncSelect from "react-select/async";
 import { components } from "react-select";
 import { motion } from "framer-motion";
 import { customStyles } from "./barstyles";
-
+import logo from "./oferta-especial.png";
 // import chroma from 'chroma-js';
 // import FetchData2 from "../data/data";
 //fortawesome icons
@@ -120,10 +120,11 @@ function UpdateCompo() {
             getOptionLabel={(e) => e.name}
             loadOptions={loadOptions}
             // onInputChange={handleInputChange}
-            onMouseOver={"lol"}
+
             onChange={handleChange}
           />
         </motion.div>
+
         <div className="contenido">
           {items.map((todo) => (
             <motion.a
@@ -141,12 +142,19 @@ function UpdateCompo() {
                 <div className="contador">
                   <p></p>
                 </div>
-                <div className="category-text-card">{todo.category} </div>    
-                  <Card.Img style={{ backgroundImage: `url(${todo.item_pictures})` }}
-                  />
-                  <Card.Text> {todo.item_description}</Card.Text>
+            
+                {todo.is_especial === true && <img src={logo} width="30 rem" height="30 rem" alt="logo" />
+
+                }
+              
+
+
                 
-               
+                <div className="category-text-card">{todo.category} </div>
+                <Card.Img
+                  style={{ backgroundImage: `url(${todo.item_pictures})` }}
+                />
+                <Card.Text> {todo.item_description}</Card.Text>
               </Card.Body>
               <Card.Footer>
                 <motion.button

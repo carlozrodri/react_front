@@ -7,46 +7,36 @@ function ItemList() {
       <div class="row">
 
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 3 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.3 }}
+          whileInView={{ opacity: 5 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          class="col"
+          className="col"
+          
         >
           Beauty
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 3 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.3 }}
+          whileInView={{ opacity: 5 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          class="col"
+          className="col"
+         
         >
           Garden
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 3 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.3 }}
+          whileInView={{ opacity: 5 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          class="col"
+          className="col"
         >
           Summer
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 3 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.3 }}
+          whileInView={{ opacity: 5 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          class="col"
+          className="col"
         >
           Sportwear
         </motion.div>
