@@ -46,7 +46,7 @@ function FooterBar() {
                     </li>
                     <li>
                       <div className="thumb-content">
-                        <a href="/Best Girldfriend Present">Best Girldfriend Present</a>
+                        <a href="/Best Girlfriend Present">Best Girlfriend Present</a>
                       </div>
                     </li>
                   </ul>
@@ -67,8 +67,8 @@ function FooterBar() {
                     Contact Us<span></span>
                   </h5>
                   <p>
-                    <a href="mailto:info@Thetop8.co.uk" title="glorythemes">
-                      info@Thetop8.co.uk
+                    <a href="mailto:info@top-8.co.uk" title="glorythemes">
+                      info@top-8.co.uk
                     </a>
                   </p>
                   <FontAwesomeIcon icon={faFacebook} size="2x" />{" "}

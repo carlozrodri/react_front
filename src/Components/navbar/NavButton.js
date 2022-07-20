@@ -73,9 +73,10 @@ function NavButton() {
         variants={menuVariants}
         animate={isOpen ? "opened" : "closed"}
       >
-        <Link variants={linkVariants}>home</Link>
-        <Link variants={linkVariants}>about</Link>
-        <Link variants={linkVariants}>gallery</Link>
+        <a href={"/"}>Home</a>
+        <a href={"/about"}>About</a>
+        <a href={"/Categories"}>Categories</a>
+        <a href={"/Contact us"}>Contactus</a>
       </Nav>
     </div>
   );

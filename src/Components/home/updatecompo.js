@@ -143,7 +143,7 @@ function UpdateCompo() {
                   <p></p>
                 </div>
             
-                {todo.is_especial == true && <img src={logo} width="30 rem" height="30 rem" alt="logo" />
+                {todo.is_especial === true && <img src={logo} width="30 rem" height="30 rem" alt="logo" />
 
                 }
               

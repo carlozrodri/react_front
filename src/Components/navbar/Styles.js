@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Header = styled.header`
-  background: #d1e6ff;
+  background: #EEEDFF;
   position: relative;
   right: 100;
   display: flex;
