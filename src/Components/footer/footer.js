@@ -46,7 +46,7 @@ function FooterBar() {
                     </li>
                     <li>
                       <div className="thumb-content">
-                        <a href="/Best Girldfriend Present">Best Girldfriend Present</a>
+                        <a href="/Best Girlfriend Present">Best Girlfriend Present</a>
                       </div>
                     </li>
                   </ul>
