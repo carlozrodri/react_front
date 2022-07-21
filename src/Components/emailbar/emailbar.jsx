@@ -53,6 +53,7 @@ sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation-by-us
         <form onSubmit={handleSubmit} className="sign-up-form">
           <div className="user-box">
             <input
+            className="is-invalid"
               type="text"
               name="email"
               placeholder="Email"

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Header, Nav, Link, SvgBox } from "./Styles";
+import { Header, Nav, SvgBox } from "./Styles";
 
 
-function JulioTest() {
+function NavButton() {
   const [isOpen, setIsOpen] = useState(false);
 
   const iconVariants = {
@@ -30,16 +30,16 @@ function JulioTest() {
     },
   };
 
-  const linkVariants = {
-    opened: {
-      opacity: 1,
-      y: 50,
-    },
-    closed: {
-      opacity: 0,
-      y: 0,
-    },
-  };
+  // const linkVariants = {
+  //   opened: {
+  //     opacity: 1,
+  //     y: 50,
+  //   },
+  //   closed: {
+  //     opacity: 0,
+  //     y: 0,
+  //   },
+  // };
 
   return (
     <div className="App">
@@ -62,7 +62,7 @@ function JulioTest() {
           >
             <path
               d="M12 4C11.4477 4 11 4.44772 11 5V11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H11V19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19V13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H13V5C13 4.44772 12.5523 4 12 4Z"
-              fill="#fff"
+              fill="#1f306e"
             />
           </svg>
         </SvgBox>
@@ -73,12 +73,13 @@ function JulioTest() {
         variants={menuVariants}
         animate={isOpen ? "opened" : "closed"}
       >
-        <Link variants={linkVariants}>home</Link>
-        <Link variants={linkVariants}>about</Link>
-        <Link variants={linkVariants}>gallery</Link>
+        <a className="accordion-body" href={"/"}>Home</a>
+        <a href={"/about"}>About</a>
+        <a href={"/Categories"}>Categories</a>
+        <a href={"/Contact us"}>Contactus</a>
       </Nav>
     </div>
   );
 }
 
-export default JulioTest;
+export default NavButton;

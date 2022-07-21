@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Header = styled.header`
-  background: #d1e6ff;
+  background: #EEEDFF;
   position: relative;
   right: 100;
   display: flex;
@@ -29,7 +29,7 @@ export const Nav = styled(motion.nav)`
 `;
 
 export const Link = styled(motion.li)`
-  color: white;
+  color: black;
   margin-bottom: 1.6rem;
   font-size: 1.4rem;
 `;

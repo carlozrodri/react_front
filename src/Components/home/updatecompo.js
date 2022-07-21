@@ -6,7 +6,7 @@ import AsyncSelect from "react-select/async";
 import { components } from "react-select";
 import { motion } from "framer-motion";
 import { customStyles } from "./barstyles";
-
+import logo from "./oferta-especial.png";
 // import chroma from 'chroma-js';
 // import FetchData2 from "../data/data";
 //fortawesome icons
@@ -120,10 +120,11 @@ function UpdateCompo() {
             getOptionLabel={(e) => e.name}
             loadOptions={loadOptions}
             // onInputChange={handleInputChange}
-            onMouseOver={"lol"}
+
             onChange={handleChange}
           />
         </motion.div>
+
         <div className="contenido">
           {items.map((todo) => (
             <motion.a
@@ -132,20 +133,28 @@ function UpdateCompo() {
               whileInView={{ opacity: 3 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3 }}
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 0.9 }}
               whileTap={{ scale: 0.9 }}
               key={todo.id}
               href={todo.url_amazon}
             >
               <Card.Body>
+                <div className="contador-is_especial">
                 <div className="contador">
                   <p></p>
                 </div>
-                  <Card.Img style={{ backgroundImage: `url(${todo.item_pictures})` }}
-                  />
-                  <Card.Text> {todo.item_description}</Card.Text>
-                
-                {/* <Card.Text>{todo.title} </Card.Text>     */}
+                <div> {todo.is_especial === true && (
+                  <img src={logo} width="30 rem" height="30 rem" alt="logo" />
+                )}</div>
+                </div>
+
+               
+
+                <div className="category-text-card"> <a href={todo.category}>{todo.category}</a> </div>
+                <Card.Img
+                  style={{ backgroundImage: `url(${todo.item_pictures})` }}
+                />
+                <Card.Text> {todo.item_description}</Card.Text>
               </Card.Body>
               <Card.Footer>
                 <motion.button
