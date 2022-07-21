@@ -10,7 +10,7 @@ import NavButton from "./NavButton";
 function NavBar() {
     return ( 
         <div>
-        <Navbar>
+        <Navbar className="navbar">
     <Navbar.Brand href="/">
       <img
         src={logo}

@@ -42,7 +42,7 @@ function NavButton() {
   // };
 
   return (
-    <div className="App">
+    <div className="App navButton">
       <Header       
           animate={isOpen ? "opened" : "closed"}
           whileHover={{ scale: 1.8 }}
