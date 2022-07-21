@@ -37,7 +37,12 @@ a:active {
   margin-bottom: 1rem;
   margin-top: -2rem
 }
-
+.contador-is_especial {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  margin-bottom: 30px
+}
 .contenido {
   text-decoration: none !important;
   padding: 20px;

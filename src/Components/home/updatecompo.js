@@ -139,18 +139,18 @@ function UpdateCompo() {
               href={todo.url_amazon}
             >
               <Card.Body>
+                <div className="contador-is_especial">
                 <div className="contador">
                   <p></p>
                 </div>
-            
-                {todo.is_especial === true && <img src={logo} width="30 rem" height="30 rem" alt="logo" />
+                <div> {todo.is_especial === true && (
+                  <img src={logo} width="30 rem" height="30 rem" alt="logo" />
+                )}</div>
+                </div>
 
-                }
-              
+               
 
-
-                
-                <div className="category-text-card">{todo.category} </div>
+                <div className="category-text-card"> <a href={todo.category}>{todo.category}</a> </div>
                 <Card.Img
                   style={{ backgroundImage: `url(${todo.item_pictures})` }}
                 />
