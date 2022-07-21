@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 function ItemList() {
   return (
-    <motion.div class="list-items">
-      <div class="row">
+    <motion.div className="list-items">
+      <div class="row-itemlist">
 
         <motion.div
           whileInView={{ opacity: 5 }}
