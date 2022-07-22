@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function ItemList() {
   return (
-    <motion.div className="list-items">
+    <div className="list-items">
       <div class="row-itemlist">
         <motion.a
          href="/Beauty"
@@ -42,7 +42,7 @@ function ItemList() {
           Sportwear
         </motion.a>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
