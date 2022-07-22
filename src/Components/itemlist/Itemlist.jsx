@@ -5,41 +5,42 @@ function ItemList() {
   return (
     <motion.div className="list-items">
       <div class="row-itemlist">
-
-        <motion.div
+        <motion.a
+         href="/Beauty"
           whileInView={{ opacity: 5 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className="col"
-          
         >
           Beauty
-        </motion.div>
-        <motion.div
+        </motion.a>
+        <motion.a
+        href="/Garden"
           whileInView={{ opacity: 5 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className="col"
-         
         >
           Garden
-        </motion.div>
-        <motion.div
+        </motion.a>
+        <motion.a
+          href="/Summer"
           whileInView={{ opacity: 5 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className="col"
         >
           Summer
-        </motion.div>
-        <motion.div
+        </motion.a>
+        <motion.a
+        href="/Sportwear"
           whileInView={{ opacity: 5 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className="col"
         >
           Sportwear
-        </motion.div>
+        </motion.a>
       </div>
     </motion.div>
   );

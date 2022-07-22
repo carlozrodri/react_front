@@ -74,9 +74,9 @@ function NavButton() {
         animate={isOpen ? "opened" : "closed"}
       >
         <a className="accordion-body" href={"/"}>Home</a>
-        <a href={"/about"}>About</a>
-        <a href={"/Categories"}>Categories</a>
-        <a href={"/Contact us"}>Contactus</a>
+        <a className="accordion-body" href={"/about"}>About</a>
+        <a className="accordion-body" href={"/Categories"}>Categories</a>
+        <a className="accordion-body" href={"/Contact us"}>Contactus</a>  
       </Nav>
     </div>
   );
