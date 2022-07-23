@@ -4,8 +4,10 @@
     width: 100%;
     padding-right: 20px;
     padding-left: 20px;
-    top:20px;
-    margin-bottom: 10px;
+    top:30px;
+    margin-bottom: -10px;
+    z-index: -1;
+    height: 100px;
     /* bottom: 20px; */
 
   }
@@ -25,7 +27,7 @@
       padding-right: 20px;
       padding-left: 20px;
       margin-bottom: 10px;
-      top:20px;
+      top: 60px;
     }
   }
   
@@ -35,8 +37,8 @@
       width: 80%;
       padding-right: 20px;
       padding-left: 250px;
-    
-   top: -45px;
+    z-index: 1;
+   top: -20px;
      
     padding-left: 490px;
     }
