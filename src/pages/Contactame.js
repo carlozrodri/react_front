@@ -1,9 +1,15 @@
 import "./Contactame.css";
+import NavBar from "../Components/navbar/navbar";
+import EmailBar from "../Components/emailbar/emailbar";
+import FooterBar from "../Components/footer/footer";
+import ItemList from "../Components/itemlist/Itemlist";
 
 function Contactame() {
   return (
-    
-      <div className="container p-3 text-zone form-floating form-control position-absolute top-50 start-50 translate-middle">
+    <>
+    <ItemList/>
+    <NavBar/>
+      <div className="container p-4 text-zone form-floating form-control">
         <div className="contact-form">
           <h1>Contact me</h1>
           <p>Don't hesitate to contact me using the form below.</p>
@@ -53,6 +59,8 @@ function Contactame() {
         </div>
       </div>
     
+      <FooterBar/>
+      </>
   );
 }
 

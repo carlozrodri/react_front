@@ -103,11 +103,7 @@ function UpdateCompo() {
   else {
     return (
       <div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 3 }}
-          viewport={{ once: true }}
-        >
+        
           <AsyncSelect
             className="search-input"
             defaultOptions
@@ -123,7 +119,7 @@ function UpdateCompo() {
 
             onChange={handleChange}
           />
-        </motion.div>
+        
 
         <div className="contenido">
           {items.map((todo) => (

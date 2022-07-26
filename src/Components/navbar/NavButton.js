@@ -76,7 +76,7 @@ function NavButton() {
         <a className="accordion-body" href={"/"}>Home</a>
         <a className="accordion-body" href={"/about"}>About</a>
         <a className="accordion-body" href={"/Categories"}>Categories</a>
-        <a className="accordion-body" href={"/Contact us"}>Contactus</a>  
+        <a className="accordion-body" href={"/Contactame"}>Contactus</a>  
       </Nav>
     </div>
   );
