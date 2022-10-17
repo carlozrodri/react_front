@@ -1,24 +1,24 @@
-{
-  "short_name": "Top8",
-  "name": "We got The Best things from Amazon.",
+{ "name": "Top8.uk",
+  "short_name": "Top8.uk",
+  "description": "We got The Best things from Amazon.",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "thetop8-pic.ico",
+      "sizes": "64x64",
+      "type": "image/png"
     },
     {
-      "src": "thetop8-pic.png",
+      "src": "thetop8-192.png",
       "type": "image/png",
       "sizes": "192x192"
-    },
+    },    
     {
-      "src": "thetop8-pic.png",
+      "src": "thetop8-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

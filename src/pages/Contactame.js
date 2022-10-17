@@ -1,6 +1,6 @@
 import "./Contactame.css";
 import NavBar from "../Components/navbar/navbar";
-import EmailBar from "../Components/emailbar/emailbar";
+// import EmailBar from "../Components/emailbar/emailbar";
 import FooterBar from "../Components/footer/footer";
 import ItemList from "../Components/itemlist/Itemlist";
 

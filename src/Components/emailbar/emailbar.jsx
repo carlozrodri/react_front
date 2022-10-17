@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import {  Card } from "react-bootstrap";
 import { motion } from "framer-motion"
@@ -27,6 +27,7 @@ function EmailBar() {
         setEmail("");
         setMessage("User created successfully");
         alert("Thanks for Signing up");
+        console.log(message)
       } else {
         setMessage("Some error occured");
       }
@@ -37,7 +38,7 @@ function EmailBar() {
   return (
 
     <div>
-    <iframe 
+    {/* <iframe 
 src="https://rcm-eu.amazon-adsystem.com/e/cm?o=2&p=12&l=ur1&category=pw&banner=1XP978DSAQYXNWEKVMR2&f=ifr&linkID=e8a9f646624d52872ad9acc8a5468e5c&t=279200-21&tracking_id=279200-21" 
 width="300" 
 height="250" 
@@ -46,7 +47,7 @@ border="0"
 
 sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"
 
-/>
+/> */}
     <Card.Body className="emailBar">
       <div className="login-box">
         <h2>Sign up to receive the best deals from TheTop8</h2>
