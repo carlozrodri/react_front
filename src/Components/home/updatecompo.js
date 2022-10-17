@@ -6,7 +6,7 @@ import AsyncSelect from "react-select/async";
 import { components } from "react-select";
 import { motion } from "framer-motion";
 import { customStyles } from "./barstyles";
-import logo from "./oferta-especial.png";
+import isespecialLogo from "./oferta-especial.png";
 // import chroma from 'chroma-js';
 // import FetchData2 from "../data/data";
 //fortawesome icons
@@ -133,6 +133,7 @@ function UpdateCompo() {
               whileTap={{ scale: 0.9 }}
               key={todo.id}
               href={todo.url_amazon}
+              
             >
               <Card.Body>
                 <div className="contador-is_especial">
@@ -140,15 +141,18 @@ function UpdateCompo() {
                   <p></p>
                 </div>
                 <div> {todo.is_especial === true && (
-                  <img src={logo} width="30 rem" height="30 rem" alt="logo" />
+                  <img src={isespecialLogo} width="30 rem" height="30 rem" alt="Es especial"/>
                 )}</div>
                 </div>
 
                
 
                 <div className="category-text-card"> <a href={todo.category}>{todo.category}</a> </div>
-                <Card.Img
-                  style={{ backgroundImage: `url(${todo.item_pictures})` }}
+                <img
+                
+                src={todo.item_pictures}
+                alt={todo.item_description}
+                // style={{ backgroundImage: `url(${todo.item_pictures})` }}
                 />
                 <Card.Text> {todo.item_description}</Card.Text>
               </Card.Body>
