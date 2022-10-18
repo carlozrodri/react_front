@@ -102,7 +102,7 @@ function UpdateCompo() {
   // cargado
   else {
     return (
-      <div>
+      <>
         
           <AsyncSelect
             className="search-input"
@@ -173,7 +173,7 @@ function UpdateCompo() {
             </motion.a>
           ))}
         </div>
-      </div>
+      </>
     );
   }
 }
