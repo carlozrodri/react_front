@@ -103,23 +103,21 @@ function UpdateCompo() {
   else {
     return (
       <>
-        
-          <AsyncSelect
-            className="search-input"
-            defaultOptions
-            type="text"
-            components={{ DropdownIndicator }}
-            styles={customStyles}
-            onMouseEnter={selectedValue}
-            placeholder="Search..."
-            value={selectedValue}
-            getOptionLabel={(e) => e.name}
-            loadOptions={loadOptions}
-            // onInputChange={handleInputChange}
+        <AsyncSelect
+          className="search-input"
+          defaultOptions
+          type="text"
+          components={{ DropdownIndicator }}
+          styles={customStyles}
+          onMouseEnter={selectedValue}
+          placeholder="Search..."
+          value={selectedValue}
+          getOptionLabel={(e) => e.name}
+          loadOptions={loadOptions}
+          // onInputChange={handleInputChange}
 
-            onChange={handleChange}
-          />
-        
+          onChange={handleChange}
+        />
 
         <div className="contenido">
           {items.map((todo) => (
@@ -133,28 +131,45 @@ function UpdateCompo() {
               whileTap={{ scale: 0.9 }}
               key={todo.id}
               href={todo.url_amazon}
-              
             >
               <Card.Body>
                 <div className="contador-is_especial">
-                <div className="contador">
-                  <p></p>
-                </div>
-                <div> {todo.is_especial === true && (
-                  <img src={isespecialLogo} width="30 rem" height="30 rem" alt="Es especial"/>
-                )}</div>
+                  <div className="contador">
+                    <p></p>
+                  </div>
+                  <div>
+                    {" "}
+                    {todo.is_especial === true && (
+                      <img
+                        src={isespecialLogo}
+                        width="30 rem"
+                        height="30 rem"
+                        alt="Es especial"
+                      />
+                    )}
+                  </div>
                 </div>
 
-               
-
-                <div className="category-text-card"> <a href={todo.category}>{todo.category}</a> </div>
-                <img
-                
-                src={todo.item_pictures}
-                alt={todo.item_description}
-                // style={{ backgroundImage: `url(${todo.item_pictures})` }}
+                <div className="category-text-card">
+                  {" "}
+                  <a href={todo.category}>{todo.category}</a>{" "}
+                </div>
+                <Card.Img
+                  className="img-fluid card-img-top"
+                  src={todo.item_pictures}
+                  alt={todo.item_description}
+                  // style={{ backgroundImage: `url(${todo.item_pictures})` }}
                 />
-                <Card.Text> {todo.item_description}</Card.Text>
+                <div className="card-body">
+                  <Card.Text>
+                    {/* style={{max-width: 150px}} */}
+
+                   
+                  
+                    {" "}
+                    {todo.item_description}
+                  </Card.Text>
+                </div>
               </Card.Body>
               <Card.Footer>
                 <motion.button
