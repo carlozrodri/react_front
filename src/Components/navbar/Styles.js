@@ -13,19 +13,19 @@ export const Header = styled.header`
 `;
 
 export const Nav = styled(motion.nav)`
-  height: 70vh;
+  height: 10vh;
   width: 100vw;
   background-color: #a3cdff;
-  border-radius: 0.5rem;
-  height: 40vh;
-  width: 30vw;
+  border-radius: 1rem;
+  height: 15rem;
+  width: 8rem;
   position: fixed;
   top: 0;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 `;
 
 export const Link = styled(motion.li)`

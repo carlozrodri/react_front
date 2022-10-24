@@ -3,9 +3,9 @@
   --i-trans-fast: 350ms;
 }
 body {
-  margin: 0px;
+  
   font-family: Helvetica;
-  line-height: 20px;
+
   background-color: #1f306e !important;
 }
 a:link {
@@ -35,13 +35,14 @@ a:active {
 }
 .category-text-card{
   margin-bottom: 1rem;
-  margin-top: -2rem
+  margin-top: -2rem;
+ 
 }
 .contador-is_especial {
   display: flex;
   justify-content: space-between;
-  align-items: top;
-  margin-bottom: 30px
+  margin-top: 10px;
+  margin-bottom: 10px
 }
 .contenido {
   text-decoration: none !important;
@@ -87,30 +88,16 @@ a:active {
   background-color: #1f306e !important;
 }
 
-.card {
-  align-self: center;
-  text-align: center;
-  height: 100%;
-  justify-content: space-between;
-    
-}
 
-.card-img {
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fff;
-  height: 300px;
-  width: fill;
-  margin: auto;
-}
+
+
 
 .card-body{
-  display: flex;
-  flex: 0 1 auto !important;
-  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  height:100%;
   justify-content: space-between;
-  padding: 1rem 1rem !important;
+  padding: 0.5rem 0.5rem !important;
 }
 
 .card-title {

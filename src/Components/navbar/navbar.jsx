@@ -9,10 +9,11 @@ import NavButton from "./NavButton";
 
 function NavBar() {
     return ( 
-        <div>
+        <>
         <Navbar className="navbar">
     <Navbar.Brand href="/">
       <img
+  
         src={logo}
         height="120"
         alt="logo"
@@ -22,7 +23,7 @@ function NavBar() {
   </Navbar>
  
 
-        </div>
+        </>
      );
 }
 

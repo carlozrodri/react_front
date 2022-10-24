@@ -50,7 +50,7 @@ sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation-by-us
 /> */}
     <Card.Body className="emailBar">
       <div className="login-box">
-        <h2>Sign up to receive the best deals from TheTop8</h2>
+        <h2>Sign up to receive the best deals from Top8</h2>
         <form onSubmit={handleSubmit} className="sign-up-form">
           <div className="user-box">
             <input

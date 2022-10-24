@@ -1,81 +1,78 @@
 /* For mobile phones: */
-@media only screen and (min-width: 300px){
-.search-input {
+@media only screen and (min-width: 300px) {
+  .search-input {
     width: 100%;
     padding-right: 20px;
     padding-left: 20px;
-    top:20px;
+    margin-top:20px;
+    top: 20px;
     margin-bottom: 10px;
     /* bottom: 20px; */
-
   }
-  .navbar{
-    padding-top: 20px;
+  .navbar {
+    padding-top: 40px;
   }
-  .navButton{
+  .navButton {
     margin-top: 87px !important;
   }
 }
 
-  
-  @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .search-input {
-      width: 100%;
-      padding-right: 20px;
-      padding-left: 20px;
-      margin-bottom: 10px;
-      top:20px;
-    }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    /* For desktop: */
-    .search-input {
-      width: 80%;
-      padding-right: 20px;
-      padding-left: 250px;
-    
-   top: -45px;
-     
-    padding-left: 490px;
-    }
-  }
-  
-.navbar {
-    height: 90px;
-    background: #1f306e;
-    justify-content: space-between;
-  }
-  
-  .navbar img {
-    margin-top: 60px;
-    padding-top: 10px;
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .search-input {
+    width: 100%;
+   
+    padding-right: 20px;
     padding-left: 20px;
-    cursor: pointer;
-    transition: 1.4s;
+    margin-bottom: 10px;
+    top: 20px;
   }
-  @media screen and (max-width: 900px) {
-    .navbar img {
-      margin-top: 20px;
-      height: 100px;
-     
-      margin-bottom:10px;
-      margin-top: 30px;
-  
-    }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* For desktop: */
+  .search-input {
+    width: 80%;
+   
+    top: -20px;
+    padding-left: 490px;
+  }
+}
+
+.navbar {
+  height: 90px;
+  background: #1f306e;
+  justify-content: space-between;
+}
+
+.navbar img {
+  margin-top: 90px;
+  padding-top: 10px;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: 1.4s;
+}
+@media screen and (max-width: 900px) {
+  .navbar img {
+    margin-top: 20px;
+    height: 100px;
+
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .navButton {
+    margin-top: 50px;
+    height: 100px;
+    margin-bottom: 10px;
   }
 
-  .App {
-    margin-top: 50px;
-    padding-right: 20px;
-    cursor: pointer;
-    transition: 1.4s;
-  }
-  @media screen and (max-width: 900px) {
-    .App {
-      margin-top: 50px;
-      height: 100px;
-      margin-bottom:10px;
-    }
-  }
+
+
+}
+
+.navButton {
+  margin-top: 50px;
+  padding-right: 20px;
+  cursor: pointer;
+  transition: 1.4s;
+}

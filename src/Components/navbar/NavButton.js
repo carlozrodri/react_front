@@ -17,8 +17,9 @@ function NavButton() {
   const menuVariants = {
     opened: {
 
-      top: 100,
-      left: (window.innerWidth - 30) / 1.427,
+      top: 140,
+      left: 20,
+    
 
       transition: {
         when: "beforeChildren",
@@ -42,7 +43,7 @@ function NavButton() {
   // };
 
   return (
-    <div className="App navButton">
+    <div className="navButton">
       <Header       
           animate={isOpen ? "opened" : "closed"}
           whileHover={{ scale: 1.8 }}
@@ -75,8 +76,8 @@ function NavButton() {
       >
         <a className="accordion-body" href={"/"}>Home</a>
         <a className="accordion-body" href={"/about"}>About</a>
-        <a className="accordion-body" href={"/Categories"}>Categories</a>
-        <a className="accordion-body" href={"/Contactame"}>Contactus</a>  
+        <a className="accordion-body" href={"/categories"}>Categories</a>
+        <a className="accordion-body" href={"/contactame"}>Contactus</a>  
       </Nav>
     </div>
   );
