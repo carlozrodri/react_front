@@ -111,6 +111,7 @@ function UpdateCompo() {
           getOptionLabel={(e) => e.name}
           loadOptions={loadOptions}
           // onInputChange={handleInputChange}
+          
 
           onChange={handleChange}
         />
@@ -155,11 +156,11 @@ function UpdateCompo() {
                   alt={todo.item_description}
                   // style={{ backgroundImage: `url(${todo.item_pictures})` }}
                 />
-           
-                  <Card.Text className="p-2">
+
+                  <h6 className="p-2">
                     {" "}
                     {todo.item_description}
-                  </Card.Text>
+                  </h6>
       
              
               <Card.Footer>
