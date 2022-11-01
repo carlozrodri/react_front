@@ -157,11 +157,10 @@ function UpdateCompo() {
                   // style={{ backgroundImage: `url(${todo.item_pictures})` }}
                 />
 
-                  <h6 className="p-2">
+                  <h1 className="p-2">
                     {" "}
                     {todo.item_description}
-                  </h6>
-      
+                  </h1>      
              
               <Card.Footer>
                 <motion.button
