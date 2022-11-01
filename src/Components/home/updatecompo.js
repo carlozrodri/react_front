@@ -160,8 +160,7 @@ function UpdateCompo() {
                   <h1 className="p-2">
                     {" "}
                     {todo.item_description}
-                  </h1>
-      
+                  </h1>      
              
               <Card.Footer>
                 <motion.button
