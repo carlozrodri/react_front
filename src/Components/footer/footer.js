@@ -67,8 +67,8 @@ function FooterBar() {
                     Contact Us<span></span>
                   </h5>
                   <p>
-                    <a href="mailto:info@top-8.co.uk" title="glorythemes">
-                      info@top-8.co.uk
+                    <a href="mailto:info@top8.uk" title="glorythemes">
+                      info@top8.uk
                     </a>
                   </p>
                   <FontAwesomeIcon icon={faFacebook} size="2x" />{" "}

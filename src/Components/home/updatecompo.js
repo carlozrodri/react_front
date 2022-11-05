@@ -148,7 +148,7 @@ function UpdateCompo() {
 
                 <div className="category-text-card">
                   {" "}
-                  <a href={todo.category}>{todo.category}</a>{" "}
+                  <h1 href={todo.category}>{todo.category}</h1>{" "}
                 </div>
                 <Card.Img
                   className="img-fluid card-img-top w-100 "
