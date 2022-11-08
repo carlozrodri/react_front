@@ -8,13 +8,14 @@ import {
   faTwitter,
   faInstagram,
   faFacebook,
+  faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import "react-responsive-select/dist/react-responsive-select.css";
 library.add(fas, faTwitter, faInstagram, faFacebook);
 function FooterBar() {
   return (
     <div>
-      <footer id="footer" className="footer-1">
+      <footer className="footer footer-1">
 
           <div className="container">
             <div className="row">
@@ -31,22 +32,22 @@ function FooterBar() {
                   <ul className="thumbnail-widget">
                     <li>
                       <div className="thumb-content">
-                        <a href="/Best Gadgets">Best Gadgets</a>
+                        <a href="/best-gadgets">Best Gadgets</a>
                       </div>
                     </li>
                     <li>
                       <div className="thumb-content">
-                        <a href="/Newest Cameras">Newest Cameras</a>
+                        <a href="/newest-cameras">Newest Cameras</a>
                       </div>
                     </li>
                     <li>
                       <div className="thumb-content">
-                        <a href="/Top 10 Beauty">Top 10 Beauty</a>
+                        <a href="/top-10-beauty">Top 10 Beauty</a>
                       </div>
                     </li>
                     <li>
                       <div className="thumb-content">
-                        <a href="/Best Girlfriend Present">Best Girlfriend Present</a>
+                        <a href="/best-girlfriend-present">Best Girlfriend Present</a>
                       </div>
                     </li>
                   </ul>
@@ -71,8 +72,8 @@ function FooterBar() {
                       info@top8.uk
                     </a>
                   </p>
-                  <FontAwesomeIcon icon={faFacebook} size="2x" />{" "}
-                  <FontAwesomeIcon icon={faTwitter} size="2x" />{" "}
+                  <FontAwesomeIcon icon={faFacebook} size="2x" />{"  "}
+                  <FontAwesomeIcon icon={faTiktok} size="2x" />{"  "}
                   <FontAwesomeIcon icon={faInstagram} size="2x" />
                 </div>
               </div>

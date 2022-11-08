@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function ItemList() {
   return (
     <div className="list-items">
-      <div class="row-itemlist">
+      <div className="row-itemlist">
         <motion.a
          href="/Beauty"
           whileInView={{ opacity: 5 }}
